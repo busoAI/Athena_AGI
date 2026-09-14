@@ -13,9 +13,11 @@ from __future__ import annotations
 import asyncio
 import logging
 import queue
+import threading
 import time
 from typing import Any, Callable
 
+import numpy as np
 from google import genai
 from google.genai import types
 import sounddevice as sd
@@ -58,6 +60,32 @@ ASK_ANTIGRAVITY_TOOL_DECLARATION = [
 ]
 
 
+def generate_earcon_tone(duration_sec: float = 0.12, sample_rate: int = 24000) -> bytes:
+    """
+    สร้างสัญญาณเสียงตอบรับสั้นๆ ทันที (Instant Processing Chime/Earcon) PCM 24kHz
+    เพื่อตัดช่วงเงียบ (Dead Air) ยืนยันว่ารับคำสั่งแล้วขณะ Antigravity กำลังประมวลผล
+    """
+    import math
+    import struct
+
+    total_samples = int(sample_rate * duration_sec)
+    audio_bytes = bytearray()
+    f1 = 800.0   # โน้ตแรก
+    f2 = 1200.0  # โน้ตสอง
+    mid = total_samples // 2
+
+    for i in range(total_samples):
+        freq = f1 if i < mid else f2
+        fade = math.sin(math.pi * i / total_samples)
+        sample_val = int(fade * 0.22 * 32767.0 * math.sin(2.0 * math.pi * freq * i / sample_rate))
+        audio_bytes.extend(struct.pack("<h", max(-32768, min(32767, sample_val))))
+
+    return bytes(audio_bytes)
+
+
+_EARCON_CHIME_BYTES = generate_earcon_tone()
+
+
 class AudioStreamManager:
     """
     จัดการ Audio Streams สำหรับ Mic PCM 16kHz และ Speaker PCM 24kHz ผ่าน sounddevice
@@ -70,10 +98,11 @@ class AudioStreamManager:
         self.input_stream: sd.RawInputStream | None = None
         self.output_stream: sd.RawOutputStream | None = None
         self.mic_queue: queue.Queue[bytes] = queue.Queue(maxsize=64)
-        self.speaker_queue: asyncio.Queue[bytes] = asyncio.Queue()
+        self.speaker_queue: asyncio.Queue[bytes] = asyncio.Queue(maxsize=120)
         self._is_active = False
         self.is_speaker_playing = False
         self.last_speaker_time = 0.0
+        self._output_lock = threading.Lock()
 
     def start(self) -> None:
         """เปิดและเริ่มสตรีมเสียงไมค์และลำโพง"""
@@ -134,13 +163,29 @@ class AudioStreamManager:
         logger.info("Audio streams closed.")
 
     def clear_speaker_queue(self) -> None:
-        """ล้างคิวเสียงลำโพงทันที (ใช้เมื่อบอสพูดแทรก / Interruption)"""
+        """ล้างคิวเสียงลำโพงทันที (ใช้เมื่อบอสพูดแทรก / Interruption) พร้อมตัดเสียงฮาร์ดแวร์ทันที"""
         while not self.speaker_queue.empty():
             try:
                 self.speaker_queue.get_nowait()
             except asyncio.QueueEmpty:
                 break
         self.is_speaker_playing = False
+        if self.output_stream is not None:
+            try:
+                with self._output_lock:
+                    self.output_stream.abort()
+                    self.output_stream.start()
+            except Exception as exc:
+                logger.debug("Output stream abort notice: %s", exc)
+
+    def play_instant_sound(self, sound_bytes: bytes) -> None:
+        """เล่นเสียงตอบรับสั้นๆ ทันทีแบบ Non-blocking เพื่อตัด Dead Air"""
+        if self.output_stream is not None and sound_bytes and self._is_active:
+            try:
+                with self._output_lock:
+                    self.output_stream.write(sound_bytes)
+            except Exception as exc:
+                logger.debug("play_instant_sound notice: %s", exc)
 
 
 class AntigravityLiveVoice:
@@ -222,16 +267,21 @@ class AntigravityLiveVoice:
                 if not data or not self._is_running:
                     continue
 
-                # Echo & Interruption Guard: ระงับการส่งเสียงไมค์หาก:
-                # 1. ลำโพงกำลังเล่นเสียงอยู่
-                # 2. เพิ่งเล่นจบไม่ถึง 0.35 วินาที
-                # 3. กำลังรอผลลัพธ์จาก Tool Call
+                # Echo & Interruption Guard (รองรับ Barge-in พูดแทรกสดได้จริง):
+                # 1. ขณะลำโพงกำลังพูด: ตรวจสอบความดัง (Peak Amplitude)
+                #    - ถ้าต่ำกว่า 3000 ถือเป็นเสียงสะท้อนจากลำโพง (Echo) -> ข้าม
+                #    - ถ้าเกิน 3000 แสดงว่าบอสกำลังเอ่ยปากพูดแทรก (Barge-in) -> ส่งเสียงขึ้นเซิร์ฟเวอร์ทันที
+                # 2. ป้องกันเสียงสะท้อนตกค้างหลังลำโพงหยุดพูด 0.20 วินาที
                 now = time.time()
-                if (
-                    self.audio_manager.is_speaker_playing
-                    or (now - self.audio_manager.last_speaker_time < 0.35)
-                    or self._is_tool_running
-                ):
+                if self.audio_manager.is_speaker_playing:
+                    try:
+                        samples = np.frombuffer(data, dtype=np.int16)
+                        peak = int(np.max(np.abs(samples))) if len(samples) > 0 else 0
+                        if peak < 3000:
+                            continue
+                    except Exception:
+                        continue
+                elif (now - self.audio_manager.last_speaker_time < 0.20):
                     continue
 
                 try:
@@ -257,7 +307,15 @@ class AntigravityLiveVoice:
                     try:
                         self.audio_manager.is_speaker_playing = True
                         self.audio_manager.last_speaker_time = time.time()
-                        await asyncio.to_thread(self.audio_manager.output_stream.write, chunk)
+                        def _write_chunk(stream: Any, chunk_bytes: bytes, lock: Any) -> None:
+                            with lock:
+                                stream.write(chunk_bytes)
+                        await asyncio.to_thread(
+                            _write_chunk,
+                            self.audio_manager.output_stream,
+                            chunk,
+                            self.audio_manager._output_lock,
+                        )
                         self.audio_manager.last_speaker_time = time.time()
                     except Exception as exc:
                         if not self._is_running:
@@ -294,7 +352,14 @@ class AntigravityLiveVoice:
                             if self._is_mouthpiece_authorized:
                                 for part in server_content.model_turn.parts:
                                     if part.inline_data and part.inline_data.data:
-                                        await self.audio_manager.speaker_queue.put(part.inline_data.data)
+                                        try:
+                                            self.audio_manager.speaker_queue.put_nowait(part.inline_data.data)
+                                        except asyncio.QueueFull:
+                                            try:
+                                                self.audio_manager.speaker_queue.get_nowait()
+                                                self.audio_manager.speaker_queue.put_nowait(part.inline_data.data)
+                                            except (asyncio.QueueEmpty, asyncio.QueueFull):
+                                                pass
                             else:
                                 logger.warning("[Muzzle Gate] บล็อกสัญญาณเสียงที่ Gemini Live แอบตอบเองโดยไม่ผ่าน Antigravity!")
 
@@ -303,12 +368,14 @@ class AntigravityLiveVoice:
                             self._is_mouthpiece_authorized = False
 
                         # ติดตามคำพูดของบอสที่ถอดความได้
-                        if server_content.input_transcription and server_content.input_transcription.text:
-                            logger.info("[Boss Heard]: %s", server_content.input_transcription.text.strip())
+                        in_trans = getattr(server_content, "input_transcription", None)
+                        if in_trans and getattr(in_trans, "text", None):
+                            logger.info("[Boss Heard]: %s", in_trans.text.strip())
 
                         # ติดตามคำพูดที่เอเธน่าอ่านออกเสียง
-                        if server_content.output_transcription and server_content.output_transcription.text:
-                            logger.info("[Athena Spoke]: %s", server_content.output_transcription.text.strip())
+                        out_trans = getattr(server_content, "output_transcription", None)
+                        if out_trans and getattr(out_trans, "text", None):
+                            logger.info("[Athena Spoke]: %s", out_trans.text.strip())
 
                     # 2. จัดการ Tool Call จาก Gemini Live
                     tool_call = response.tool_call
@@ -330,6 +397,10 @@ class AntigravityLiveVoice:
                                         logger.debug("on_tool_call hook error: %s", exc)
 
                                 if fc.name == "ask_antigravity":
+                                    # ยิงเสียง Chime สั้นๆ ทันที (Earcon) เพื่อตัด Dead Air ให้บอสรู้ว่ารับคำสั่งแล้วและกำลังจัดการ
+                                    asyncio.create_task(
+                                        asyncio.to_thread(self.audio_manager.play_instant_sound, _EARCON_CHIME_BYTES)
+                                    )
                                     args = fc.args or {}
                                     speech = (
                                         args.get("user_speech")
@@ -406,11 +477,14 @@ class AntigravityLiveVoice:
 
                         # ทำงานจนกว่าจะมี Task สิ้นสุด
                         done, pending = await asyncio.wait(
-                            [sender_task, receiver_task],
+                            [sender_task, receiver_task, playback_task],
                             return_when=asyncio.FIRST_COMPLETED,
                         )
                         for task in pending:
                             task.cancel()
+                        if pending:
+                            await asyncio.gather(*pending, return_exceptions=True)
+                        self.audio_manager.clear_speaker_queue()
                         for task in done:
                             if not task.cancelled() and task.exception():
                                 raise task.exception()

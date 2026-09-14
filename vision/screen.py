@@ -367,8 +367,8 @@ class ScreenObserver:
     def locate_element(
         cls,
         target: str,
-        model: str = "gemini-3.1-flash-lite",
-        fallback_model: str = "gemini-2.0-flash",
+        model: str = "gemini-2.0-flash",
+        fallback_model: str = "gemini-2.5-flash",
     ) -> dict[str, Any]:
         """Locate a target UI element on screen using Gemini Visual Grounding.
 
@@ -487,8 +487,8 @@ If the element is not found on the screen, respond with:
     def describe_screen(
         cls,
         query: str = "",
-        model: str = "gemini-3.1-flash-lite",
-        fallback_model: str = "gemini-2.0-flash",
+        model: str = "gemini-2.0-flash",
+        fallback_model: str = "gemini-2.5-flash",
     ) -> str:
         """Capture screen and describe what is visible or answer a specific query concisely in Thai."""
         import io

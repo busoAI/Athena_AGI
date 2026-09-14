@@ -29,32 +29,18 @@ async def run_voice_loop(core: AthenaCore) -> None:
 
 
 async def run_console_loop(core: AthenaCore) -> None:
-    """รันระบบสั่งงานผ่านคอนโซล (พิมพ์สั่งงาน) ด้วย Gemini Brain + Native Function Calling"""
-    from google import genai
-    from google.genai import types
-    from config import Config
-
+    """รันระบบสั่งงานผ่านคอนโซล (พิมพ์สั่งงาน) ควบคุมผ่าน Antigravity Supervisor โดยตรง"""
     loop = asyncio.get_running_loop()
     print("\n" + "=" * 60)
-    print("  ATHENA OS AGENT (Autonomous Terminal Mode)")
-    print("  สมอง Gemini คิดและตัดสินใจเลือก Tool เอง 100% (ไร้ if-else)")
+    print("  ATHENA OS AGENT (Autonomous Executive Terminal Mode)")
+    print("  สมอง Antigravity คิด วางแผน สั่งการ และ Closed-Loop Verify 100%")
     print("  พิมพ์คำสั่งภาษาธรรมชาติได้ทุกอย่าง เช่น: 'ย่อหน้าต่าง', 'ดูหน้าจอให้หน่อย'")
     print("  พิมพ์ 'exit' หรือ 'quit' เพื่อปิดระบบ")
     print("=" * 60 + "\n")
 
-    from voice.live_stream import ATHENA_SYSTEM_PROMPT
-
-    client = genai.Client(api_key=Config.GEMINI_API_KEY)
-    tools = [{"function_declarations": core.get_tool_declarations()}]
-
-    chat = client.chats.create(
-        model=Config.CHAT_MODEL,
-        config=types.GenerateContentConfig(
-            system_instruction=ATHENA_SYSTEM_PROMPT,
-            tools=tools,
-            temperature=0.2,
-        ),
-    )
+    if not core.supervisor:
+        from brain.supervisor import AntigravitySupervisor
+        core.supervisor = AntigravitySupervisor(core=core)
 
     while True:
         try:
@@ -65,31 +51,13 @@ async def run_console_loop(core: AthenaCore) -> None:
             if cmd.lower() in {"exit", "quit", "q", "ออก"}:
                 break
 
-            response = await asyncio.to_thread(chat.send_message, cmd)
-
-            # จัดการ Tool Calls หากโมเดลต้องการรันเครื่องมือ
-            while response.function_calls:
-                function_responses = []
-                for fc in response.function_calls:
-                    print(f"[Athena Thinking] กำลังเรียกใช้เครื่องมือ: {fc.name} (args: {fc.args})")
-                    result = core.execute_tool(fc.name, fc.args or {})
-                    print(f"[Athena Execution]: {result}")
-                    function_responses.append(
-                        types.Part.from_function_response(
-                            name=fc.name,
-                            response={"result": result}
-                        )
-                    )
-                # ส่งผลลัพธ์ของ Tool กลับให้โมเดลสรุปคำตอบ
-                response = await asyncio.to_thread(chat.send_message, function_responses)
-
-            if response.text:
-                print(f"[Athena]: {response.text.strip()}\n")
+            response = await core.supervisor.aexecute_task(cmd)
+            print(f"[Athena]: {response}\n")
 
         except (KeyboardInterrupt, EOFError):
             break
         except Exception as exc:
-            print(f"[Athena Error]: {exc}")
+            print(f"[Athena Error]: {exc}\n")
 
 
 async def async_main(args: argparse.Namespace) -> None:

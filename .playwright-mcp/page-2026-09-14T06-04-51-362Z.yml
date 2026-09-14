@@ -1,0 +1,1688 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - generic [ref=e3]:
+        - link "ข้ามไปยังเนื้อหาหลัก":
+          - /url: "#main"
+        - generic [ref=e5]:
+          - link "OpenAI Home" [ref=e6] [cursor=pointer]:
+            - /url: /th-TH/
+          - generic [ref=e11]:
+            - navigation "เมนูหลัก" [ref=e13]:
+              - list [ref=e14]:
+                - listitem [ref=e15]:
+                  - link "งานวิจัย" [ref=e16] [cursor=pointer]:
+                    - /url: /th-TH/research/index/
+                  - button "เมนู งานวิจัย"
+                - listitem [ref=e19]:
+                  - button "ผลิตภัณฑ์" [ref=e20] [cursor=pointer]
+                  - button "เมนู ผลิตภัณฑ์"
+                - listitem [ref=e23]:
+                  - link "ธุรกิจ" [ref=e24] [cursor=pointer]:
+                    - /url: /th-TH/business/
+                  - button "เมนู ธุรกิจ"
+                - listitem [ref=e27]:
+                  - link "นักพัฒนา" [ref=e28] [cursor=pointer]:
+                    - /url: /th-TH/api/
+                  - button "เมนู นักพัฒนา"
+                - listitem [ref=e31]:
+                  - link "บริษัท" [ref=e32] [cursor=pointer]:
+                    - /url: /th-TH/about/
+                  - button "เมนู บริษัท"
+                - listitem [ref=e35]:
+                  - link "มูลนิธิ (เปิดในหน้าต่างใหม่)" [ref=e36] [cursor=pointer]:
+                    - /url: https://openaifoundation.org/th-TH/
+                    - generic [ref=e37]: มูลนิธิ
+                    - generic [ref=e39]: (เปิดในหน้าต่างใหม่)
+            - generic [ref=e41]:
+              - button "เปิดค้นหา" [ref=e43] [cursor=pointer]
+              - button "ปิดการค้นหา" [ref=e46] [cursor=pointer]
+            - generic [ref=e50]:
+              - button "ลงชื่อเข้าใช้" [ref=e51] [cursor=pointer]
+              - link "ลองใช้ ChatGPT (เปิดในหน้าต่างใหม่)" [ref=e54] [cursor=pointer]:
+                - /url: https://chatgpt.com/?openaicom-did=08c57908-9276-4e3a-9c1c-158dc3ec3111&openaicom_referred=true
+                - text: ลองใช้ ChatGPT
+                - generic [ref=e57]: (เปิดในหน้าต่างใหม่)
+    - generic [ref=e58]:
+      - main [ref=e59]:
+        - generic [ref=e60]: "GPT-6 Astra: ความสามารถอันชาญฉลาดเจเนอเรชันใหม่ | OpenAI"
+        - generic [ref=e61]:
+          - generic:
+            - generic:
+              - paragraph [aria-hidden]:
+                - generic: G
+                - generic: P
+                - generic: T
+              - paragraph [aria-hidden]:
+                - generic: A
+                - generic: s
+                - generic: t
+                - generic: r
+                - generic: a
+              - button "Replay spiral field animation" [ref=e62] [cursor=pointer]
+          - article [ref=e66]:
+            - generic [ref=e68]:
+              - 'heading "GPT-6 Astra: A new generation of intelligence" [level=1] [ref=e69]'
+              - button "Drag or use arrow keys to rotate the Astra star field" [ref=e70]
+            - heading "ขีดความสามารถอัจฉริยะยุคใหม่" [level=2] [ref=e75]
+            - generic [ref=e85]:
+              - generic [ref=e88]:
+                - generic [ref=e90]:
+                  - paragraph [ref=e91]: เราขอเปิดตัว GPT‑6 Astra โมเดลที่ฉลาดที่สุดในโลกและได้รับการปรับให้ทำงานสอดคล้องกับเจตนาของผู้ใช้มากที่สุด
+                  - paragraph [ref=e92]:
+                    - text: GPT‑6 Astra เป็นผลจากการผสานงานวิจัยที่สั่งสมมาหลายปีเข้ากับการลงทุนครั้งสำคัญในด้านการฝึกล่วงหน้า การเรียนรู้แบบเสริมกำลัง และการปรับโมเดลให้สอดคล้องกับเป้าหมาย Astra มีความสามารถล้ำสมัยที่สุดในด้านการใช้งานคอมพิวเตอร์ การท่องเว็บ วิศวกรรมซอฟต์แวร์ ความมั่นคงปลอดภัยทางไซเบอร์ วิทยาศาสตร์ และงานระดับมืออาชีพ Astra ทำคะแนนจนแตะเพดานของ FrontierMath Tier 4 ด้วยคะแนน 98% โดยก่อนหน้านี้ได้ช่วย
+                    - link "แก้ปัญหาเปิดที่ค้างคามานาน⁠" [ref=e93] [cursor=pointer]:
+                      - /url: /th-TH/index/ten-advances-in-mathematics/
+                      - generic [ref=e94]: แก้ปัญหาเปิดที่ค้างคามานาน
+                      - text: ⁠
+                    - text: ในสาขาคณิตศาสตร์มาแล้ว Astra ยังทำคะแนนบน ARC-AGI-3 ได้ 99.9% และทำคะแนนบน ExploitBench ได้เต็ม 100% นอกจากนี้ ยังยกระดับขีดความสามารถด้านการใช้คอมพิวเตอร์และเบราว์เซอร์ไปอีกขั้น โดยรับมือกับงานระดับมืออาชีพที่ซับซ้อนที่สุดได้ด้วยความรวดเร็ว ความแม่นยำ และวิจารณญาณที่เหนือชั้น
+                  - paragraph [ref=e95]: GPT‑6 Astra เริ่มทยอยเปิดให้ใช้งานแล้ววันนี้สำหรับองค์กรจำนวนจำกัด และจะเปิดให้ผู้ใช้ ChatGPT Plus, Pro, Business และ Enterprise ทุกคนใช้งานได้ภายในไม่กี่วันข้างหน้า รวมถึงผ่าน OpenAI API, Microsoft Azure และ AWS Bedrock
+                - generic [ref=e96]:
+                  - tablist "แท็บ" [ref=e100]:
+                    - generic [ref=e103]:
+                      - tab "Terminal-Bench Science 0.1" [selected] [ref=e104] [cursor=pointer]
+                      - tab "ARC-AGI-3" [ref=e106] [cursor=pointer]
+                      - tab "FrontierMath ระดับ 4 (v2)" [ref=e108] [cursor=pointer]
+                      - tab "Terminal-Bench 4.0" [ref=e110] [cursor=pointer]
+                      - tab "AutomationBench" [ref=e112] [cursor=pointer]
+                  - tabpanel "Terminal-Bench Science 0.1" [ref=e117]:
+                    - figure [ref=e118]:
+                      - paragraph [ref=e127]:
+                        - generic [ref=e128]: Terminal-Bench Science 0.1 ทดสอบว่าเอเจนต์สามารถทำเวิร์กโฟลว์การวิจัยทางวิทยาศาสตร์ให้เสร็จสมบูรณ์ได้หรือไม่ โดยใช้โค้ดและเครื่องมือเทอร์มินัล ซึ่งรวมถึงการวิเคราะห์ข้อมูล การรันการจำลอง และการปรับโมเดลให้พอดีกับข้อมูล GPT‑6 Astra ทำคะแนนสูงสุดครั้งใหม่ในบรรดาโมเดลที่นำมาเปรียบเทียบที่ 64.6% เทียบกับ Claude Fable 5.1 ที่ 52.6% โดยมีค่าใช้จ่าย API โดยประมาณต่ำกว่าราว 31% ในการตั้งค่าที่มีต้นทุนต่ำกว่า Astra ทำคะแนนได้ 61.1% เทียบกับผลลัพธ์ดีที่สุดของ GPT‑5.6 Sol ที่ 22.4% โดยมีค่าใช้จ่าย API โดยประมาณต่ำกว่า 27%
+              - figure "Greg Kamradt จาก ARC Prize Foundation" [ref=e136]:
+                - blockquote [ref=e137]: “ในการทดสอบ ARC-AGI-3 Astra แก้โจทย์โดยใช้ขั้นตอนได้อย่างมีประสิทธิภาพกว่ามนุษย์ใน 96% ของด่าน ส่งผลให้มีประสิทธิภาพใกล้เคียงมนุษย์ในเกณฑ์มาตรฐานนี้ นี่ไม่เพียงเป็นโมเดลที่ดีที่สุดเท่าที่เราเคยทดสอบมา แต่ยังสะท้อนถึงความก้าวหน้าครั้งสำคัญของโมเดลระดับแนวหน้า ทั้งในด้านการรับมือและแก้โจทย์ในสภาพแวดล้อมที่ไม่เคยพบมาก่อน รวมถึงความรวดเร็วและมีประสิทธิภาพในการเรียนรู้วิธีแก้โจทย์เหล่านั้น”
+              - generic [ref=e141]:
+                - paragraph [ref=e144]: Astra เป็นโมเดลที่สอดคล้องกับเจตนาของผู้ใช้มากที่สุดของเรา โดยพัฒนาขึ้นอย่างมากทั้งด้านการทำความเข้าใจเจตนาของผู้ใช้และพฤติกรรมของโมเดล ทำให้คุณมอบหมายงานได้อย่างมั่นใจในวิจารณญาณของ Astra มากขึ้น วิธีหนึ่งที่เราใช้ทดสอบเรื่องนี้คือการสร้างการประเมินใหม่โดยอิงจากเหตุการณ์ Hugging Face เพื่อดูว่าเมื่อโมเดลต้องเผชิญกับงานที่ยากหรือเป็นไปไม่ได้ โมเดลจะทำเกินขอบเขตที่กำหนดไว้หรือไม่ เมื่อไม่มีมาตรการป้องกันสำหรับการใช้งานจริง GPT‑5.6 Sol ดำเนินการนอกเหนือจากเป้าหมายที่ได้รับอนุญาตใน 48% ของกรณี ส่วน GPT‑6 Astra ไม่พบกรณีเช่นนี้เลย (0%)
+                - figure [ref=e145]
+            - button "Drag or use arrow keys to rotate the cursor" [ref=e150]
+            - generic [ref=e153]:
+              - heading "โมเดลการใช้คอมพิวเตอร์ที่ดีที่สุดในโลก" [level=2] [ref=e158]
+              - generic [ref=e161]:
+                - paragraph [ref=e164]: GPT‑6 Astra เปิดพรมแดนใหม่ด้านความเร็ว ความแม่นยำ และความปลอดภัยในการใช้งานคอมพิวเตอร์ โมเดลสามารถจัดการงานที่น่าเบื่อและใช้เวลามากได้ เช่น กรอกแบบฟอร์มออนไลน์ อัปเดตข้อมูลลูกค้าในระบบ CRM และจัดระเบียบปฏิทินของคุณ โมเดลสามารถค้นหาข้อมูลทางออนไลน์ แล้วร่างบทสรุปไว้ในอีเมลหรือโปรแกรมแก้ไขเอกสารของคุณได้ โมเดลสามารถวิเคราะห์ข้อมูลทางวิทยาศาสตร์ สร้างกราฟ สร้างเว็บไซต์ และตรวจสอบ QA ของฟรอนต์เอนด์เพื่อให้แน่ใจว่าฟีเจอร์ทั้งหมดบนเว็บไซต์ทำงานได้อย่างถูกต้อง โมเดลสามารถติดตั้งและทดสอบซอฟต์แวร์ให้คุณได้ด้วยตนเอง พร้อมช่วยวิเคราะห์และแก้ไขปัญหาที่คุณเห็นบนหน้าจอ การพัฒนาเหล่านี้ยังสะท้อนให้เห็นในผลการประเมินระดับแนวหน้าของเราด้วย
+                - generic [ref=e165]:
+                  - tablist "แท็บ" [ref=e169]:
+                    - generic [ref=e172]:
+                      - tab "Agents’ Last Exam" [selected] [ref=e173] [cursor=pointer]
+                      - tab "ScreenSpot-Pro" [ref=e175] [cursor=pointer]
+                      - tab "OSWorld" [ref=e177] [cursor=pointer]
+                  - tabpanel "Agents’ Last Exam" [ref=e182]:
+                    - figure [ref=e183]:
+                      - paragraph [ref=e192]:
+                        - generic [ref=e193]: Agents’ Last Exam ทดสอบเอเจนต์ด้วยงานระดับมืออาชีพที่ซับซ้อนในซอฟต์แวร์จริง ตั้งแต่การสร้างแบบจำลองทางการเงินไปจนถึงวิศวกรรมและการผลิตสื่อ GPT‑6 Astra ทำสถิติสูงสุดใหม่ในการเปรียบเทียบที่แสดง โดยได้คะแนน 59.3% เทียบกับ 55.5% สำหรับ Claude Opus 5 และ 53.6% สำหรับ GPT‑5.6 Sol ในการตั้งค่าที่ได้คะแนนสูงสุดเหล่านี้ Astra ยังใช้โทเค็นเอาต์พุตน้อยกว่า Opus 5 ประมาณ 65%
+              - paragraph [ref=e199]:
+                - text: การปรับปรุงเหล่านี้ยังส่งผลให้งานจริงที่ต้องอาศัยความรู้มีประสิทธิภาพเพิ่มขึ้นอย่างมาก ในการจำลองเวลาแฝงบน OSWorld 2.0 Astra มีประสิทธิภาพในการใช้งานคอมพิวเตอร์สูงกว่า GPT‑5.6 โดยใช้เวลาต่องานน้อยลงประมาณ 47% Sol ทำคะแนนได้ 72.6% โดยใช้เวลาประมาณ 40 นาทีต่องาน เทียบกับ 65.7% โดยใช้เวลาประมาณ 75 นาทีต่องาน
+                - superscript [ref=e200]:
+                  - superscript [ref=e201]:
+                    - link "3" [ref=e203] [cursor=pointer]:
+                      - /url: "#citation-bottom-3"
+              - generic [ref=e206]:
+                - paragraph [ref=e209]: "ความสามารถด้านการใช้งานคอมพิวเตอร์ของ GPT‑6 Astra แสดงให้เห็นผ่านผลลัพธ์ในหลากหลายสาขา รวมถึงการพัฒนาเกม วิศวกรรมไฟฟ้า และงานด้านความรู้ในชีวิตประจำวัน:"
+                - generic [ref=e210]:
+                  - tablist "แท็บ" [ref=e214]:
+                    - generic [ref=e217]:
+                      - tab "แผงวงจร" [selected] [ref=e218] [cursor=pointer]
+                      - tab "การแข่งขัน Excel" [ref=e220] [cursor=pointer]
+                      - tab "การพัฒนาเกม" [ref=e222] [cursor=pointer]
+                      - tab "การกรอกแบบฟอร์ม 1040" [ref=e224] [cursor=pointer]
+                      - tab "การประกันคุณภาพส่วนหน้า" [ref=e226] [cursor=pointer]
+                      - tab "Power BI" [ref=e228] [cursor=pointer]
+                      - tab "ระบบทรานมิสชันรถยนต์" [ref=e230] [cursor=pointer]
+                      - tab "การจัดรูปแบบเอกสารทางกฎหมาย" [ref=e232] [cursor=pointer]
+                  - tabpanel "แผงวงจร" [ref=e237]:
+                    - figure [ref=e238]:
+                      - paragraph [ref=e251]:
+                        - generic [ref=e252]: นี่คือวิดีโอเล่นย้อนหลังแบบย่อความยาว 15 วินาทีที่แสดง GPT‑6 Astra ออกแบบเลย์เอาต์แผงวงจรพิมพ์ (PCB) ใน KiCad โดยเปลี่ยนแผนผังวงจรอิเล็กทรอนิกส์ให้เป็น PCB ที่พร้อมสำหรับการผลิต ด้วยการจัดวางชิ้นส่วนและเดินลายทองแดงเพื่อเชื่อมต่อวงจร การออกแบบเลย์เอาต์ PCB เป็นส่วนสำคัญของอุปกรณ์อิเล็กทรอนิกส์ทุกชนิดในปัจจุบัน แต่ยังเป็นงานที่ต้องทำด้วยตนเองและมักเป็นหนึ่งในสาเหตุที่ทำให้กระบวนการออกแบบอุปกรณ์อิเล็กทรอนิกส์ล่าช้า การเร่งขั้นตอนนี้ให้เร็วขึ้นจะช่วยให้วิศวกรมีเวลาสร้างสรรค์ ปรับแต่ง และทดสอบแนวคิดถัดไปได้บ่อยและรวดเร็วยิ่งขึ้นอย่างมาก
+              - generic [ref=e255]:
+                - paragraph [ref=e258]:
+                  - text: Alongside Astra, we are also updating the Codex harness to significantly improve the speed of computer use. Combined with Astra’s efficiency, this translates to a 1.9x faster task completion compared to the current GPT‑5.6 Sol experience, on the Mind2Web benchmark. The model’s improvements on speed mean it can take on many time-consuming life tasks for you, faster than you can.
+                  - superscript [ref=e259]:
+                    - superscript [ref=e260]:
+                      - link "4" [ref=e262] [cursor=pointer]:
+                        - /url: "#citation-bottom-4"
+                - generic [ref=e263]:
+                  - tablist "แท็บ" [ref=e267]:
+                    - generic [ref=e270]:
+                      - tab "ค้นหากุมารแพทย์" [selected] [ref=e271] [cursor=pointer]
+                      - tab "การหาอพาร์ตเมนต์" [ref=e273] [cursor=pointer]
+                      - tab "การนัดหมายกับ DMV" [ref=e275] [cursor=pointer]
+                      - tab "ของว่างที่มีคาร์โบไฮเดรตต่ำ" [ref=e277] [cursor=pointer]
+                      - tab "การวิเคราะห์ตัวเลือกโรงเรียนอนุบาล" [ref=e279] [cursor=pointer]
+                  - tabpanel "ค้นหากุมารแพทย์" [ref=e284]:
+                    - generic [ref=e287]:
+                      - 'heading "GPT‑6 Astra: 2 นาที 54 วินาที" [level=5] [ref=e290]':
+                        - generic [ref=e291]: "GPT‑6 Astra:"
+                        - text: 2 นาที 54 วินาที
+                      - figure [ref=e292]
+              - figure "Silas Alberti รองประธานอาวุโสฝ่ายวิจัยด้านการรู้คิด" [ref=e306]:
+                - img "Cognition" [ref=e308]
+                - blockquote [ref=e309]: “เราเริ่มนำ GPT‑6 Astra มาใช้กับระบบของ Devin ตั้งแต่วันเปิดตัว และโมเดลก็ทำผลงานได้ในระดับแนวหน้าจากการทดสอบเกณฑ์มาตรฐานภายในของเรา ความสามารถอันยอดเยี่ยมด้านการใช้คอมพิวเตอร์ การเขียน และการทำความเข้าใจโค้ดเบสช่วยให้การทดสอบดีขึ้นได้ทันที วิดีโอติดตามเนื้อหาได้ง่ายขึ้นอย่างเห็นได้ชัด และรายงานก็อ่านง่ายและกระชับกว่าเดิม
+            - generic [ref=e313]:
+              - heading "การเปลี่ยนแปลงแบบก้าวกระโดดในงานวิชาชีพ" [level=2] [ref=e318]
+              - generic [ref=e321]:
+                - paragraph [ref=e324]: GPT‑6 Astra ได้รับการพัฒนาให้ใช้คอมพิวเตอร์ได้เก่งขึ้น พร้อมผ่านการฝึกที่ออกแบบมาโดยเฉพาะสำหรับการทำงานระดับมืออาชีพ จึงช่วยจัดการงานที่ซับซ้อนได้อย่างมีประสิทธิภาพ Astra ไม่เพียงรับมือกับปัญหาที่ซับซ้อนได้ แต่ยังทำงานที่มีหลายขั้นตอนต่อเนื่องกันจนเสร็จ และสร้างเอกสาร สเปรดชีต รวมถึงงานนำเสนอที่มีคุณภาพพร้อมใช้งาน
+                - generic [ref=e325]:
+                  - tablist "แท็บ" [ref=e329]:
+                    - generic [ref=e332]:
+                      - tab "BenchCAD" [selected] [ref=e333] [cursor=pointer]
+                      - tab "BrowseComp" [ref=e335] [cursor=pointer]
+                      - tab "OpenScore String Quartets" [ref=e337] [cursor=pointer]
+                      - tab "งานออกแบบ (ภายใน)" [ref=e339] [cursor=pointer]
+                      - tab "งานด้านวิทยาการข้อมูล (ภายใน)" [ref=e341] [cursor=pointer]
+                  - tabpanel "BenchCAD" [ref=e346]:
+                    - figure [ref=e347]:
+                      - paragraph [ref=e356]:
+                        - generic [ref=e357]: BenchCAD tests whether models can reconstruct 3D objects from multi-view renders by generating CAD code. With tools, GPT‑6 Astra reaches a new high in the comparison shown, achieving a 95.9% geometric-overlap score, versus 83.3% for GPT‑5.6 Sol and 84.3% reported for Claude Fable 5.1.
+                        - superscript [ref=e358]:
+                          - link "5" [ref=e360] [cursor=pointer]:
+                            - /url: "#citation-bottom-5"
+                        - generic [ref=e361]: Estimated API cost is approximately 43% lower than Sol and 86% lower than Fable 5.1 in the configurations shown.
+              - generic [ref=e364]:
+                - paragraph [ref=e367]: GPT‑6 Astra เป็นโมเดลที่ดีที่สุดของเราในการทำตามเทมเพลตที่มีอยู่ และสร้างสไลด์ที่จัดวางองค์ประกอบได้ดี ถ่ายทอดประเด็นสำคัญอย่างกระชับ พร้อมลำดับเนื้อหาที่เป็นระบบ ระบบจะสร้างเอกสาร งานนำเสนอ สเปรดชีต และบทวิเคราะห์ที่ชัดเจนและมีโครงสร้างดี โดยเป็นไปตามเทมเพลตของคุณและสอดคล้องกับสไตล์การเขียนและรูปแบบภาพของคุณ Astra ยังได้รับการฝึกให้เลือกเฉพาะบริบทที่สำคัญต่อผลลัพธ์ แทนที่จะนำข้อมูลที่ไม่จำเป็นต่องานตรงหน้ามากล่าวซ้ำ ทั้งหมดนี้ทำให้โมเดลสามารถสร้างผลงานที่พร้อมนำไปใช้ได้ทันทีมากขึ้น และสอดคล้องกับบริบทและมาตรฐานของธุรกิจคุณ
+                - generic [ref=e368]:
+                  - tablist "แท็บ" [ref=e372]:
+                    - generic [ref=e375]:
+                      - tab "งานนำเสนอ Gaia" [selected] [ref=e376] [cursor=pointer]
+                      - tab "สเปรดชีต" [ref=e378] [cursor=pointer]
+                      - tab "การจัดสไตล์เอกสาร" [ref=e380] [cursor=pointer]
+                  - tabpanel "งานนำเสนอ Gaia" [ref=e385]:
+                    - generic [ref=e388]:
+                      - generic [ref=e391]:
+                        - paragraph [ref=e399]: ไฟล์อ้างอิง
+                        - paragraph [ref=e410]: ผลงานจาก GPT‑6 Astra
+                      - paragraph [ref=e419]:
+                        - generic [ref=e420]: GPT‑6 Astra สร้างสไลด์นำเสนอเกี่ยวกับ GPT‑Gaia ซึ่งเป็นโมเดลสมมติ โดยใช้สไลด์เพียงไม่กี่หน้าจากเทมเพลตงานนำเสนอของ OpenAI เป็นตัวอย่าง และถ่ายทอดทั้งน้ำเสียงและรูปแบบการจัดวางได้อย่างถูกต้องสอดคล้องกันตลอดทั้งชุด คุณจึงมั่นใจได้ว่างานนำเสนอที่สร้างขึ้นจะมีรูปแบบตรงตามมาตรฐานขององค์กร
+              - generic [ref=e423]:
+                - paragraph [ref=e426]:
+                  - text: GPT‑6 Astra ยังมีความสามารถในการตัดสินด้านภาพที่ดีขึ้นสำหรับเว็บไซต์ เกม แอปพลิเคชัน และภาพเรนเดอร์ที่โมเดลสร้างขึ้น
+                  - link "Sites⁠ (เปิดในหน้าต่างใหม่)" [ref=e427] [cursor=pointer]:
+                    - /url: https://learn.chatgpt.com/docs/sites?surface=app
+                    - generic [ref=e428]: Sites
+                    - text: ⁠
+                    - generic [ref=e429]: (เปิดในหน้าต่างใหม่)
+                  - text: ใน ChatGPT ช่วยให้ Astra สร้าง โฮสต์ และแชร์เว็บไซต์ เว็บแอป และเกมได้โดยตรงจากพรอมต์
+                - figure "Alex Mashrabov, CEO และผู้ร่วมก่อตั้งของ Higgsfield AI" [ref=e437]:
+                  - img "Higgsfield AI" [ref=e439]
+                  - blockquote [ref=e440]: “Astra ทำให้เรามีข้อได้เปรียบอย่างมากทั้งด้านความสามารถและประสิทธิภาพ โมเดลนี้ดำเนินเวิร์กโฟลว์ด้านการสร้างสรรค์ที่ซับซ้อนที่สุดของเราได้สำเร็จ โดยใช้โทเค็นน้อยกว่าโมเดลอื่นที่เราทดสอบถึง 20% สิ่งสำคัญที่สุดคือ สำหรับลูกค้าของเรา นั่นหมายถึงผลลัพธ์ที่มีคุณภาพสูงขึ้น”
+                - generic [ref=e442]:
+                  - tablist "แท็บ" [ref=e446]:
+                    - generic [ref=e449]:
+                      - tab "คำแนะนำแบบทีละขั้นตอนสำหรับ Unreal Engine" [selected] [ref=e450] [cursor=pointer]
+                      - tab "โมเดล Blender" [ref=e452] [cursor=pointer]
+                      - tab "ภาพนิ่ง" [ref=e454] [cursor=pointer]
+                  - tabpanel "คำแนะนำแบบทีละขั้นตอนสำหรับ Unreal Engine" [ref=e459]:
+                    - figure [ref=e460]:
+                      - paragraph [ref=e473]:
+                        - generic [ref=e474]: GPT‑6 Astra สร้างโมเดลบ้านใน Blender และเปลี่ยนให้เป็นฉากที่เดินสำรวจได้ใน Unreal Engine 5 ช่วยให้นักออกแบบและลูกค้าสำรวจผังพื้นที่และสัมผัสประสบการณ์ในพื้นที่ได้ก่อนสร้างจริง
+                - generic [ref=e475]:
+                  - tablist "แท็บ" [ref=e479]:
+                    - generic [ref=e482]:
+                      - tab "เกมแข่งรถโกคาร์ต" [selected] [ref=e483] [cursor=pointer]
+                      - tab "ยานอวกาศ" [ref=e485] [cursor=pointer]
+                  - tabpanel "เกมแข่งรถโกคาร์ต" [ref=e490]:
+                    - figure [ref=e491]:
+                      - generic [ref=e492]:
+                        - iframe [ref=e497]:
+                          - main "Tidal Rush tropical kart racing game" [ref=f2e2]:
+                            - generic "Three-dimensional tropical racecourse" [ref=f2e4]
+                            - region "Start race" [ref=f2e5]:
+                              - generic [ref=f2e6]:
+                                - paragraph [ref=f2e7]: SALTWATER CIRCUIT · ROUND 01
+                                - generic "Tidal Rush" [ref=f2e8]:
+                                  - generic [ref=f2e9]: TIDAL
+                                  - generic [ref=f2e10]:
+                                    - text: RUSH
+                                    - generic [ref=f2e11]: ✦
+                                - paragraph [ref=f2e12]: PARADISE GRAND PRIX
+                                - button "START YOUR ENGINES →" [ref=f2e13] [cursor=pointer]:
+                                  - generic [ref=f2e14]: START YOUR ENGINES
+                                  - generic [ref=f2e15]: →
+                                - generic [ref=f2e16]:
+                                  - generic [ref=f2e17]:
+                                    - generic [ref=f2e18]: W
+                                    - generic [ref=f2e19]: A
+                                    - generic [ref=f2e20]: S
+                                    - generic [ref=f2e21]: D
+                                    - generic [ref=f2e22]: DRIVE
+                                  - generic [ref=f2e23]:
+                                    - generic [ref=f2e24]: SPACE
+                                    - generic [ref=f2e25]: DRIFT
+                                  - generic [ref=f2e26]:
+                                    - generic [ref=f2e27]: E
+                                    - generic [ref=f2e28]: ITEM
+                              - generic [ref=f2e29]:
+                                - generic [ref=f2e30]: "01"
+                                - generic [ref=f2e31]:
+                                  - paragraph [ref=f2e32]: TODAY'S COURSE
+                                  - paragraph [ref=f2e33]: SUNBREAK COVE
+                                  - generic [ref=f2e34]: 3 LAPS · 8 RACERS
+                        - paragraph [ref=e504]:
+                          - generic [ref=e505]: "โมเดลสร้างเกมให้ออกมามีชีวิตชีวาได้ด้วยกราฟิกที่โดดเด่น รูปแบบการเล่นที่ชวนติดตาม และการเคลื่อนไหวที่แม่นยำ แม้ไม่มีพื้นฐานด้านเทคนิคก็สามารถสร้างเกมในแบบที่ต้องการและเล่นได้ภายในไม่กี่นาที โดยตัวเกมมีรายละเอียดมากกว่าองค์ประกอบพื้นฐานแบบง่ายๆ เครดิต: Pietro Schirano"
+              - generic [ref=e508]:
+                - generic [ref=e510]:
+                  - paragraph [ref=e511]: เมื่อคำสั่งมีความคลุมเครือและสามารถตีความได้หลายทาง GPT‑6 Astra สามารถตัดสินใจเลือกแนวทางที่ถูกต้องได้ดีกว่าโมเดลรุ่นก่อน โมเดลใช้ข้อมูลจากบริบทเพื่อจัดการกับรายละเอียดทั่วไปที่ขาดหายไป และจะถามเฉพาะคำถามที่จำเป็นเมื่อคำตอบอาจมีผลต่อผลลัพธ์ ใน Codex โมเดลสามารถถามคำถามโดยไม่ต้องรอคำตอบ พร้อมเดินหน้าทำส่วนที่ไม่ต้องรอคำตอบจากคุณได้ หากคุณไม่ตอบ โมเดลจะดำเนินงานต่อโดยตั้งสมมติฐานที่สมเหตุสมผลในกรณีที่เหมาะสม แต่จะรอคำตอบจากคุณเมื่อต้องตัดสินใจในเรื่องสำคัญ
+                  - paragraph [ref=e512]: ตัวอย่างด้านล่างแสดงให้เห็นว่า Astra ทำงานร่วมกับคุณในงานทั่วไปอย่างไร เมื่อข้อมูลที่ขาดหายไปอาจทำให้คำตอบเปลี่ยนไปอย่างมาก
+                - generic [ref=e513]:
+                  - tablist "แท็บ" [ref=e517]:
+                    - generic [ref=e520]:
+                      - tab "เว็บไซต์สมัครงาน" [selected] [ref=e521] [cursor=pointer]
+                      - tab "ค้นหามหาวิทยาลัย" [ref=e523] [cursor=pointer]
+                      - tab "รายการซื้อของชำ" [ref=e525] [cursor=pointer]
+                  - tabpanel "เว็บไซต์สมัครงาน" [ref=e530]:
+                    - figure [ref=e531]:
+                      - img "การเปรียบเทียบ GPT-5.6 Sol และ GPT-6 Astra แบบเคียงข้างกันขณะช่วยสร้างเว็บไซต์ส่วนตัวสำหรับนำเสนอเส้นทางอาชีพ" [ref=e538]
+                - paragraph [ref=e541]: Astra ยังติดตามบริบทและสถานะของงานได้ดียิ่งขึ้น แม้รายละเอียดหรือเป้าหมายจะเปลี่ยนไประหว่างทาง โมเดลรุ่นก่อนบางครั้งมองข้อความที่ใช้ปรับทิศทางเป็นเป้าหมายใหม่ จนหลุดจากคำขอเดิมหรือข้อจำกัดก่อนหน้า Astra ปรับการทำงานตามข้อกำหนดใหม่หรือเปลี่ยนแนวทางตามที่ผู้ใช้ขอได้ และแม้จะแวะตอบคำถามอื่นระหว่างทาง ก็ยังติดตามงานหลักต่อได้โดยไม่หลุดประเด็น
+                - figure "Niko Grupen หัวหน้าฝ่ายวิจัยประยุกต์จาก Harvey" [ref=e549]:
+                  - img "Harvey" [ref=e551]
+                  - blockquote [ref=e552]: “Astra ยกระดับคุณภาพจาก GPT‑5.6 Sol อย่างชัดเจนในการทำงานด้านกฎหมายที่ซับซ้อนหลากหลายประเภท จากการทดสอบเบื้องต้นของเรา Astra โดดเด่นด้วยแนวทางการทำงานด้านกฎหมายที่คล้ายกับทนายความผู้มีวิจารณญาณ โดยแยกแยะได้ว่าข้อมูลใดมาจากเอกสารและข้อมูลใดเป็นข้อเท็จจริงที่มีหลักฐานยืนยัน ชี้ให้เห็นข้อสันนิษฐานที่ไม่มีหลักฐานรองรับ และนำประเด็นที่ข้อมูลยังขาดหายมาแปลงเป็นแนวทางที่ชัดเจนในการร่างเอกสาร
+            - generic [ref=e556]:
+              - heading "การเขียนโค้ด" [level=2] [ref=e561]
+              - generic [ref=e564]:
+                - paragraph [ref=e567]: GPT‑6 Astra เป็นโมเดลที่ดีที่สุดสำหรับวิศวกรรมซอฟต์แวร์จนถึงปัจจุบัน
+                - generic [ref=e570]:
+                  - figure "John Crepezzi ฝ่ายผู้ช่วย AI จาก Jane Street" [ref=e573]:
+                    - img "Jane Street" [ref=e575]
+                    - blockquote [ref=e576]: “GPT‑6 Astra ทำผลงานได้ในระดับแนวหน้าจากเกณฑ์การประเมินด้านการเขียนโค้ดภายในของเรา และเมื่อเทียบกับ GPT‑5.6 Sol ก็พัฒนาขึ้นอย่างชัดเจนในการประเมินความเข้าใจและวิจารณญาณด้านการเทรด เมื่อนำ GPT‑6 Astra มาใช้เป็นเอเจนต์ช่วยเขียนโค้ด นักพัฒนาจะติดตามและเข้าใจการสื่อสารของโมเดลได้ง่ายขึ้น อีกทั้งยังใช้เวลาแก้ไขและปรับโค้ดซ้ำน้อยลงกว่าจะได้คุณภาพพร้อมใช้งานจริง”
+                  - figure "Fabian Hedin ผู้ร่วมก่อตั้งและ CTO ของ Lovable" [ref=e580]:
+                    - img "Lovable" [ref=e582]
+                    - blockquote [ref=e583]: “เราทดสอบ Astra ที่ระดับความพยายามต่ำ ปลานกลาง และสูง ในการประเมินรุ่นแรก ๆ รายการหนึ่งของเรา และพบว่ามันทำผลงานได้เหนือกว่า GPT 5.6 Sol อย่างมาก ระดับความพยายามที่สูงขึ้นช่วยให้ทำซ้ำบนบิลด์ใหม่ได้มากขึ้น ตรวจสอบยืนยันผ่านการทดสอบในเบราว์เซอร์ได้มากขึ้น และเน้นการรันโค้ดมากกว่าการใช้ apply-patch การทำความเข้าใจว่าโมเดลใช้ความพยายามอย่างไรช่วยให้เรามอบเส้นทางที่เร็วขึ้นและเชื่อถือได้มากขึ้นจากไอเดียสู่แอปที่ใช้งานได้จริงแก่ผู้สร้างหลายล้านคน”
+                - generic [ref=e585]:
+                  - tablist "แท็บ" [ref=e589]:
+                    - generic [ref=e592]:
+                      - tab "Terminal-Bench 4.0" [selected] [ref=e593] [cursor=pointer]
+                      - tab "FrontierCode 1.1 Extended" [ref=e595] [cursor=pointer]
+                      - tab "DeepSWE" [ref=e597] [cursor=pointer]
+                      - tab "Coding Agent ของ Artificial Analysis" [ref=e599] [cursor=pointer]
+                      - tab "งานการย้ายฐานข้อมูล (ภายใน)" [ref=e601] [cursor=pointer]
+                  - tabpanel "Terminal-Bench 4.0" [ref=e606]:
+                    - figure [ref=e607]:
+                      - paragraph [ref=e616]:
+                        - generic [ref=e617]: Terminal-Bench 4.0 ประเมินความสามารถของเอเจนต์ในการทำงานที่ซับซ้อนผ่านเทอร์มินัล เช่น วิศวกรรมซอฟต์แวร์ การตั้งค่าระบบ และการวิเคราะห์ข้อมูล GPT‑6 Astra ทำคะแนนได้ 57.9% ซึ่งเป็นสถิติสูงสุดครั้งใหม่ เมื่อเทียบกับ GPT‑5.6 Sol ที่ 37.3%
+                        - superscript [ref=e618]:
+                          - link "2" [ref=e620] [cursor=pointer]:
+                            - /url: "#citation-bottom-2:2"
+                        - generic [ref=e621]: และ Claude Fable 5.1 ที่ 55.8% โดยมีต้นทุน API โดยประมาณต่องานต่ำกว่า GPT‑5.6 Sol ราว 9% และต่ำกว่า Claude Fable 5.1 ราว 63%
+              - paragraph [ref=e624]:
+                - text: Astra มาพร้อมวิธีใหม่ที่ช่วยให้ Codex สามารถเก็บและเรียกคืนบริบทเมื่อหน้าต่างบริบทเต็ม ในอดีต โมเดลใช้การย่อบริบทเพื่อสรุปงานระหว่างเซสชันที่ยาวนาน เช่น เมื่อแก้ไขปัญหาที่ซับซ้อนหรือปรับโครงสร้างโค้ดขนาดใหญ่ การย่อบริบทแต่ละครั้งอาจละรายละเอียดเกี่ยวกับสาเหตุที่การแก้ไขไม่สำเร็จหรือวิธีที่คอมโพเนนต์ทำงาน ใน Codex นั้น Astra สามารถเก็บบันทึกข้ามหน้าต่างบริบทได้ โดยรักษารายละเอียดที่สะสมไว้โดยไม่ต้องบีบอัดซ้ำๆ ให้เป็นสรุปเดียว Astra ยังคงค้นหาข้อมูลในหน้าต่างบริบทก่อนหน้าได้ จึงสามารถย้อนกลับไปค้นหาข้อกำหนดหรือผลการทดสอบจากข้อความและผลลัพธ์ของเครื่องมือก่อนหน้านี้ แม้ว่าข้อมูลนั้นจะไม่ได้บันทึกไว้ในโน้ตของ Astra ก็ตาม คุณสามารถเปิดใช้ฟีเจอร์ทดลองนี้ได้ใน
+                - link "config.toml ของ Codex⁠ (เปิดในหน้าต่างใหม่)" [ref=e625] [cursor=pointer]:
+                  - /url: https://learn.chatgpt.com/docs/config-file/config-reference
+                  - text: config.toml ของ Codex⁠
+                  - generic [ref=e626]: (เปิดในหน้าต่างใหม่)
+                - text: และจะกลายเป็นค่าเริ่มต้นสำหรับ Astra ในอีกไม่กี่สัปดาห์ข้างหน้า
+            - generic [ref=e629]:
+              - heading "ยกระดับการค้นพบทางวิทยาศาสตร์" [level=2] [ref=e634]
+              - generic [ref=e637]:
+                - figure "Greg Burnham, EpochAI" [ref=e645]:
+                  - img "EpochAI" [ref=e647]
+                  - blockquote [ref=e648]: “เรื่องราวนี้คือจุดจบของยุคหนึ่ง และจุดเริ่มต้นของยุคใหม่”
+                - generic [ref=e651]:
+                  - paragraph [ref=e652]:
+                    - text: GPT‑6 Astra is a major advance for scientific discovery, mathematics, and health. Today, we’re sharing two further results on the gaps between prime numbers.
+                    - superscript [ref=e653]:
+                      - superscript [ref=e654]:
+                        - link "9" [ref=e656] [cursor=pointer]:
+                          - /url: "#citation-bottom-9"
+                        - text: และ
+                        - link "10" [ref=e658] [cursor=pointer]:
+                          - /url: "#citation-bottom-10"
+                  - paragraph [ref=e659]: Astra also sets new records across a suite of math and science evaluations.
+                - generic [ref=e660]:
+                  - tablist "แท็บ" [ref=e664]:
+                    - generic [ref=e667]:
+                      - tab "GPQA Diamond" [selected] [ref=e668] [cursor=pointer]
+                      - tab "HealthBench Professional" [ref=e670] [cursor=pointer]
+                      - tab "LifeSci Bench" [ref=e672] [cursor=pointer]
+                      - tab "GeneBench Pro" [ref=e674] [cursor=pointer]
+                      - tab "MedChemBench" [ref=e676] [cursor=pointer]
+                  - tabpanel "GPQA Diamond" [ref=e681]:
+                    - figure [ref=e682]:
+                      - paragraph [ref=e691]:
+                        - generic [ref=e692]: GPQA Diamond ทดสอบการให้เหตุผลทางวิทยาศาสตร์ระดับบัณฑิตศึกษาในสาขาชีววิทยา เคมี และฟิสิกส์ GPT‑6 Astra สร้างสถิติสูงสุดใหม่ในการเปรียบเทียบที่แสดง โดยทำคะแนนได้ถึง 96.0% เมื่อใช้การตั้งค่าที่มีต้นทุนต่ำกว่า Astra ยังทำคะแนนได้สูงกว่าคะแนนสูงสุดของ GPT‑5.6 Sol ซึ่งอยู่ที่ 94.9% เทียบกับ 94.6% ด้วยต้นทุน API โดยประมาณที่ต่ำลงประมาณ 37%
+              - generic [ref=e695]:
+                - paragraph [ref=e698]: Astra สามารถช่วยในงานเชิงปฏิบัติที่อยู่เบื้องหลังการค้นพบทางวิทยาศาสตร์ได้ Astra นำการให้เหตุผลทางวิทยาศาสตร์มาใช้ควบคู่กับความสามารถในการใช้คอมพิวเตอร์ จึงทำงานผ่านซอฟต์แวร์เฉพาะทางเพื่อตรวจสอบข้อมูลและวิเคราะห์ผลลัพธ์ได้โดยตรง ช่วยให้นักวิจัยพิจารณาหลักฐานและตัดสินใจได้ว่าควรศึกษาเรื่องใดต่อ
+                - generic [ref=e699]:
+                  - tablist "แท็บ" [ref=e703]:
+                    - generic [ref=e706]:
+                      - tab "คุณภาพในการจัดลำดับ" [selected] [ref=e707] [cursor=pointer]
+                      - tab "เวิร์กโฟลว์การติดตามเซลล์" [ref=e709] [cursor=pointer]
+                  - tabpanel "คุณภาพในการจัดลำดับ" [ref=e714]:
+                    - figure [ref=e715]:
+                      - paragraph [ref=e728]:
+                        - generic [ref=e729]: GPT‑6 Astra ใช้งานซอฟต์แวร์ทางวิทยาศาสตร์เพื่อตรวจสอบคุณภาพการหาลำดับเบสและแสดงภาพความแปรผันทางพันธุกรรม ช่วยให้นักวิจัยประเมินข้อมูลของตนและระบุจุดที่ควรมุ่งเน้นการวิเคราะห์เพิ่มเติม
+            - generic [ref=e732]:
+              - heading "ความปลอดภัยทางไซเบอร์" [level=2] [ref=e737]
+              - generic [ref=e740]:
+                - generic [ref=e742]:
+                  - paragraph [ref=e743]:
+                    - text: As we discussed in our
+                    - link "safety update⁠" [ref=e744] [cursor=pointer]:
+                      - /url: /th-TH/index/path-to-astra/
+                      - generic [ref=e745]: safety update
+                      - text: ⁠
+                    - text: ", Astra is a significant jump in cyber capabilities and meets the"
+                    - link "Critical threshold" [ref=e746] [cursor=pointer]:
+                      - /url: /th-TH/index/path-to-astra/
+                    - text: in cybersecurity under our
+                    - link "Preparedness Framework" [ref=e748] [cursor=pointer]:
+                      - /url: /index/updating-our-preparedness-framework/
+                    - text: . Its ability to identify and develop zero-day exploits can help defenders find and patch weaknesses, but it also creates a need for stronger safeguards. To understand how far these capabilities extend, we ran Astra on internal and third-party expert evaluations.
+                  - paragraph [ref=e750]:
+                    - text: We first tested the model without production safeguards on ExploitBench and ExploitGym, which evaluate whether models can turn known software vulnerabilities into working exploits. On ExploitBench, Astra achieved a perfect score of 100%, compared with 78.5% for GPT‑5.6 Sol, our previous frontier cyber-capable model. On ExploitGym, Astra reached a 42.4% success rate, compared with 30.3% for GPT‑5.6 Sol, while using substantially fewer output tokens.
+                    - superscript [ref=e751]:
+                      - superscript [ref=e752]:
+                        - link "13" [ref=e754] [cursor=pointer]:
+                          - /url: "#citation-bottom-13"
+                - generic [ref=e755]:
+                  - tablist "แท็บ" [ref=e759]:
+                    - generic [ref=e762]:
+                      - tab "ExploitBench" [selected] [ref=e763] [cursor=pointer]
+                      - tab "ExploitGym" [ref=e765] [cursor=pointer]
+                      - tab "ExploitBench (มิถุนายน-สิงหาคม 2569)" [ref=e767] [cursor=pointer]
+                      - tab "SRE-Bench" [ref=e769] [cursor=pointer]
+                  - tabpanel "ExploitBench" [ref=e774]:
+                    - figure [ref=e775]
+              - generic [ref=e780]:
+                - paragraph [ref=e781]:
+                  - text: Given concerns that exposure to historical software vulnerabilities may have affected benchmark results, we also evaluated Astra on two novel benchmarks. For one, we built an internal “ExploitBench (June–August 2026)” evaluation to test exploit development using vulnerabilities from the previous three months.
+                  - superscript [ref=e782]:
+                    - superscript [ref=e783]:
+                      - link "14" [ref=e785] [cursor=pointer]:
+                        - /url: "#citation-bottom-14"
+                  - text: Astra achieved substantially higher arbitrary code-execution rates than GPT‑5.6 Sol on this dataset while using far fewer output tokens. During the evaluation, Astra even discovered and used two previously unknown zero-day vulnerabilities. We are disclosing both vulnerabilities to their maintainers.
+                - paragraph [ref=e786]:
+                  - text: We also tested Astra on SRE-Bench
+                  - superscript [ref=e787]:
+                    - superscript [ref=e788]:
+                      - link "15" [ref=e790] [cursor=pointer]:
+                        - /url: "#citation-bottom-15"
+                  - text: ", a benchmark that measures whether models can reverse engineer software binaries to understand its core logic without access to raw source code. Astra solved 88.0% of tasks in a single attempt and 99.2% within four attempts, compared with 55.9% and 68.7% for GPT‑5.6 Sol, respectively."
+                - paragraph [ref=e791]: Beyond benchmarks, expert-led assessments found that Astra, when run without production safeguards, could use previously unknown vulnerabilities to achieve arbitrary code execution in hardened browsers and create privilege-escalation exploits for hardened operating-systems.
+                - paragraph [ref=e792]:
+                  - text: As we discussed in
+                  - link "The Defender’s Window" [ref=e793] [cursor=pointer]:
+                    - /url: /th-TH/index/the-defenders-window/
+                  - text: ", frontier cyber capabilities can help defenders find weaknesses faster, but they also make those weaknesses easier to exploit, raising the urgency for defenders to adapt. With the version of Astra launching today, defenders can use it to complete tasks such as secure code review and patching."
+                - paragraph [ref=e795]:
+                  - text: However, Astra will refuse to comply with more advanced cybersecurity tasks such as creating proof-of-concept exploits for vulnerabilities. Through
+                  - link "OpenAI Daybreak⁠" [ref=e796] [cursor=pointer]:
+                    - /url: /th-TH/daybreak/
+                    - generic [ref=e797]: OpenAI Daybreak
+                    - text: ⁠
+                  - text: ", we plan to expand access and roll out less restrictive safeguards in the coming weeks. This will enable more defensive workflows, including vulnerability and proof-of-concept validation, malware analysis, and detection engineering."
+                - paragraph [ref=e798]:
+                  - text: We have also strengthened our protections against potential cyber misuse, building upon our safeguards stack for GPT‑5.6 Sol. These include stronger model robustness to better withstand potential jailbreaks and more context for our monitoring systems. We have continued rigorous internal and external testing, including automated evaluations with our
+                  - link "internal red-teaming attackers" [ref=e799] [cursor=pointer]:
+                    - /url: /th-TH/index/unlocking-self-improvement-gpt-red/
+                  - text: . More details about our cyber safeguards and testing are available in the Astra
+                  - link "safety overview⁠" [ref=e801] [cursor=pointer]:
+                    - /url: /th-TH/index/safety-overview-gpt-6-astra/
+                  - text: and
+                  - link "system card⁠ (เปิดในหน้าต่างใหม่)" [ref=e802] [cursor=pointer]:
+                    - /url: https://deploymentsafety.openai.com/gpt-6-astra
+                    - text: system card⁠
+                    - generic [ref=e803]: (เปิดในหน้าต่างใหม่)
+                  - text: ..
+            - generic [ref=e806]:
+              - heading "การปรับให้สอดคล้องและการนำ GPT‑6 Astra ไปใช้งานอย่างรับผิดชอบ" [level=2] [ref=e811]
+              - generic [ref=e814]:
+                - generic [ref=e816]:
+                  - paragraph [ref=e817]: Astra เป็นโมเดลที่สอดคล้องกับแนวทางของเรามากที่สุด Astra ทำงานได้อย่างรอบคอบ ไม่ออกนอกขอบเขตที่กำหนด และสื่อสารกับผู้ใช้อย่างชัดเจนตรงไปตรงมา งานนี้เป็นผลลัพธ์ล่าสุดจากโครงการวิจัยที่ดำเนินมาอย่างยาวนานของเรา ซึ่งมุ่งเน้นการเทรนโมเดลให้คงความสอดคล้องกับเจตนาของมนุษย์ตั้งแต่ต้นจนจบ
+                  - paragraph [ref=e818]: ในสภาพแวดล้อมที่ละเอียดอ่อน Astra จะดำเนินการด้วยความระมัดระวังในระดับที่สอดคล้องกับความเสี่ยงนั้น ในการประเมินด้านการใช้คอมพิวเตอร์ เราจงใจเลือกงานที่ออกแบบมาเพื่อชักจูงให้โมเดลทำสิ่งที่ไม่ควรทำ และพบว่า Astra หลีกเลี่ยงผลกระทบที่ไม่ได้ตั้งใจได้ดีกว่า การรันโดยใช้มาตรการรักษาความปลอดภัยเพิ่มเติมที่มีให้ตามค่าเริ่มต้น ให้ประสิทธิภาพที่ดียิ่งขึ้นไปอีก
+                - figure [ref=e819]:
+                  - paragraph [ref=e828]:
+                    - text: Astra causes fewer misaligned outcomes than any other frontier models tested. For a fair comparison, we used a generic computer-using-agent harness (based on the native computer use tools available in both the
+                    - link "OpenAI Responses API⁠ (เปิดในหน้าต่างใหม่)" [ref=e829] [cursor=pointer]:
+                      - /url: https://developers.openai.com/api/docs/guides/tools-computer-use
+                      - text: OpenAI Responses API⁠
+                      - generic [ref=e830]: (เปิดในหน้าต่างใหม่)
+                    - text: and
+                    - link "Anthropic Messages API⁠ (เปิดในหน้าต่างใหม่)" [ref=e831] [cursor=pointer]:
+                      - /url: https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool
+                      - text: Anthropic Messages API⁠
+                      - generic [ref=e832]: (เปิดในหน้าต่างใหม่)
+                    - text: ) and without additional protections that are normally deployed to Codex and ChatGPT Work users (auto-review, confirmation policy).
+                    - superscript [ref=e833]:
+                      - link "16" [ref=e835] [cursor=pointer]:
+                        - /url: "#citation-bottom-16"
+              - generic [ref=e838]:
+                - paragraph [ref=e841]:
+                  - text: Astra ยังมีแนวโน้มทำงานโดยไม่ออกนอกขอบเขตที่ผู้ใช้กำหนด รวมถึงขอบเขตที่เข้าใจได้จากสภาพแวดล้อม ผลการประเมินภายในพบว่า เมื่อ Codex Auto-Review ไม่อนุมัติ Astra ไม่เคยพยายามหาทางเลี่ยงระบบเพื่อดำเนินการต่อ แม้จะจงใจตั้งค่า Auto-Review ให้มีช่องทางหลบเลี่ยง และงานนั้นจะทำไม่สำเร็จหากไม่ใช้ช่องทางดังกล่าว Astra ก็ยังไม่พยายามหลีกเลี่ยงระบบ การที่ Astra ปฏิบัติตามข้อจำกัดของสภาพแวดล้อมเช่นนี้ สอดคล้องกับผลการประเมินงานด้านไซเบอร์ที่เป็นไปไม่ได้ของเรา ซึ่งเราได้แชร์ไว้ในบทนำของโพสต์นี้ และข้อค้นพบอื่นๆ ที่บันทึกไว้ใน
+                  - link "การ์ดระบบ⁠ (เปิดในหน้าต่างใหม่)" [ref=e842] [cursor=pointer]:
+                    - /url: https://deploymentsafety.openai.com/gpt-6-astra
+                    - text: การ์ดระบบ⁠
+                    - generic [ref=e843]: (เปิดในหน้าต่างใหม่)
+                  - text: ของเรา
+                - generic [ref=e844]:
+                  - tablist "แท็บ" [ref=e848]:
+                    - generic [ref=e851]:
+                      - tab "การหลบเลี่ยงระบบตรวจสอบอัตโนมัติ" [selected] [ref=e852] [cursor=pointer]
+                      - tab "Honeypot ของ ExploitGym" [ref=e854] [cursor=pointer]
+                  - tabpanel "การหลบเลี่ยงระบบตรวจสอบอัตโนมัติ" [ref=e859]:
+                    - figure [ref=e860]:
+                      - paragraph [ref=e869]:
+                        - generic [ref=e870]: การประเมินนี้ใช้ทดสอบว่าโมเดลจะทำอย่างไรเมื่อผลงานในงานที่ต้องใช้ความรู้ไม่ผ่านการตรวจสอบอัตโนมัติ หากโมเดลใช้ช่องโหว่จากการตั้งค่าที่ไม่เหมาะสมของผู้ใช้เพื่อเลี่ยงการตรวจสอบอัตโนมัติ จะถือว่าล้มเหลวในการประเมิน Astra ไม่เคยพยายามหลบเลี่ยงการตรวจสอบอัตโนมัติ
+              - generic [ref=e873]:
+                - paragraph [ref=e876]: Astra additionally sets new marks in transparent user communication. In one evaluation, Astra is three times less likely than GPT‑5.6 Sol to make inaccurate representations about its capabilities and affordances.
+                - figure [ref=e877]:
+                  - paragraph [ref=e886]:
+                    - generic [ref=e887]: ผลการประเมินการหลอนเกี่ยวกับความสามารถของโมเดลแสดงให้เห็นว่า Astra ปรับปรุงขึ้นอย่างมากจาก GPT‑5.6 Sol โดยกล่าวอ้างเกี่ยวกับความสามารถของตัวเองในลักษณะที่ทำให้เข้าใจผิดน้อยลง
+              - generic [ref=e889]:
+                - paragraph [ref=e890]:
+                  - text: Our evaluations found Astra’s written reasoning harder to monitor than GPT‑5.6 Sol’s, based on tests that explicitly asked it to evade monitoring. We attribute this to Astra’s greater control over written reasoning on simpler tasks and ability to solve problems with fewer written steps. Astra still appears to struggle to conceal the reasoning needed for complex tasks, but we take the decline seriously. Improving monitorability remains a research priority, and the accompanying
+                  - link "system card⁠ (เปิดในหน้าต่างใหม่)" [ref=e891] [cursor=pointer]:
+                    - /url: https://deploymentsafety.openai.com/gpt-6-astra
+                    - generic [ref=e892]: system card
+                    - text: ⁠
+                    - generic [ref=e893]: (เปิดในหน้าต่างใหม่)
+                  - text: details our findings and ongoing work.
+                - paragraph [ref=e894]:
+                  - text: Alignment training is core to our approach to deployment. As an additional layer of defenses, we also build system safeguards like Codex
+                  - link "Auto-review⁠ (เปิดในหน้าต่างใหม่)" [ref=e895] [cursor=pointer]:
+                    - /url: https://alignment.openai.com/auto-review/
+                    - generic [ref=e896]: Auto-review
+                    - text: ⁠
+                    - generic [ref=e897]: (เปิดในหน้าต่างใหม่)
+                  - text: and monitoring agents’ reasoning and actions to help detect and contain unsafe behavior. As described in our
+                  - link "safety update⁠" [ref=e898] [cursor=pointer]:
+                    - /url: /th-TH/index/path-to-astra/
+                    - generic [ref=e899]: safety update
+                    - text: ⁠
+                  - text: ", we are also deploying misalignment monitoring in production for Astra-class models in order to have visibility into misalignment, and help contain its worst instances. These safeguards resemble our monitoring for internal deployments and involve a system of classifiers which check the model’s reasoning and actions for unauthorized behavior and automatically stop potentially unauthorized activity."
+                - paragraph [ref=e900]: "Given the significant increase in Astra’s cybersecurity capabilities, we are being especially careful to make this deployment safe and secure. Extra safety checks can sometimes slow, pause, or stop legitimate work, including defensive cybersecurity. If a task is paused in ChatGPT or Codex, you may be asked to review the action before continuing. In the API, the task will stop. These checks can sometimes interrupt legitimate work, and we are continuing to iterate on this system to reduce unnecessary interruptions. Misalignment monitoring cannot replace alignment: our goal is to build models that reliably stay within their authorized scope, so these protections do not need to intervene."
+            - generic [ref=e903]:
+              - heading "ความพร้อมในการใช้งาน" [level=2] [ref=e908]
+              - generic [ref=e910]:
+                - paragraph [ref=e911]: GPT‑6 Astra is rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API, Microsoft Azure, and AWS Bedrock. Astra usage is included within the existing subscription allowances—users and businesses will also be able to purchase credits for additional usage. Users on the Pro, Business, and Enterprise plans will also get access to GPT‑6 Astra Pro. Enterprise administrators can enable Astra for their workspace; access is off by default at launch.
+                - paragraph [ref=e912]:
+                  - text: Astra supports Zero Data Retention for eligible API customers, and as we shared last month, we're testing
+                  - link "Private Safety Processing" [ref=e913] [cursor=pointer]:
+                    - /url: /th-TH/index/offering-zero-data-retention-for-frontier-models/
+                  - text: to strengthen safety monitoring while preserving customer privacy.
+                - paragraph [ref=e915]:
+                  - text: For developers, GPT‑6 Astra will be available in the OpenAI API as
+                  - code [ref=e916]: gpt-6-astra
+                  - text: and through Microsoft Azure and Amazon Bedrock.
+                - paragraph [ref=e917]: OpenAI API Standard pricing is $10 per million input tokens and $50 per million output tokens. Separate rates apply to cache reads and writes. Fast mode is available for GPT‑6 Astra in the API and delivers up to 2x the speed of Standard processing at 2x the Standard price.
+            - button "Drag or use arrow keys to rotate the OpenAI blossom" [ref=e919]
+            - generic [ref=e922]:
+              - generic [ref=e924]:
+                - heading "การใช้คอมพิวเตอร์" [level=3] [ref=e925]
+                - table [ref=e930]:
+                  - rowgroup [ref=e931]:
+                    - row [ref=e932]:
+                      - cell [ref=e933]:
+                        - paragraph [ref=e934]: Computer Use
+                      - cell [ref=e935]:
+                        - paragraph [ref=e936]: GPT‑6 Astra
+                      - cell [ref=e937]:
+                        - paragraph [ref=e938]:
+                          - generic [ref=e939]:
+                            - text: GPT‑5.6 Sol
+                            - superscript [ref=e940]:
+                              - link "2" [ref=e942] [cursor=pointer]:
+                                - /url: "#citation-bottom-2:3"
+                      - cell [ref=e943]:
+                        - paragraph [ref=e944]: Claude Fable 5.1
+                      - cell [ref=e945]:
+                        - paragraph [ref=e946]: Claude Fable 5
+                      - cell [ref=e947]:
+                        - paragraph [ref=e948]: Claude Opus 5
+                      - cell [ref=e949]:
+                        - paragraph [ref=e950]: Gemini 3.8 Flash
+                    - row [ref=e951]:
+                      - cell [ref=e952]:
+                        - paragraph [ref=e953]: Agents' Last Exam
+                      - cell [ref=e954]:
+                        - paragraph [ref=e955]: 59.3%
+                      - cell [ref=e956]:
+                        - paragraph [ref=e957]: 53.6%
+                      - cell [ref=e958]:
+                        - paragraph [ref=e959]: "-"
+                      - cell [ref=e960]:
+                        - paragraph [ref=e961]: 48.7%
+                      - cell [ref=e962]:
+                        - paragraph [ref=e963]: 55.5%
+                      - cell [ref=e964]:
+                        - paragraph [ref=e965]: "-"
+                    - row [ref=e966]:
+                      - cell [ref=e967]:
+                        - paragraph [ref=e968]: OSWorld 2.0 (v2026.08.08, offline set, partial score)
+                      - cell [ref=e969]:
+                        - paragraph [ref=e970]: 72.6%
+                      - cell [ref=e971]:
+                        - paragraph [ref=e972]: 65.7%
+                      - cell [ref=e973]:
+                        - paragraph [ref=e974]: "-"
+                      - cell [ref=e975]:
+                        - paragraph [ref=e976]: "-"
+                      - cell [ref=e977]:
+                        - paragraph [ref=e978]:
+                          - text: 70.2%
+                          - superscript [ref=e979]:
+                            - link "3" [ref=e981] [cursor=pointer]:
+                              - /url: "#citation-bottom-3:2"
+                      - cell [ref=e982]:
+                        - paragraph [ref=e983]: "-"
+                    - row [ref=e984]:
+                      - cell [ref=e985]:
+                        - paragraph [ref=e986]: ScreenSpot-Pro (no tools)
+                      - cell [ref=e987]:
+                        - paragraph [ref=e988]: 92.7%
+                      - cell [ref=e989]:
+                        - paragraph [ref=e990]: 76.9%
+                      - cell [ref=e991]:
+                        - paragraph [ref=e992]: "-"
+                      - cell [ref=e993]:
+                        - paragraph [ref=e994]:
+                          - text: 87.3%
+                          - superscript [ref=e995]:
+                            - link "17" [ref=e997] [cursor=pointer]:
+                              - /url: "#citation-bottom-17"
+                      - cell [ref=e998]:
+                        - paragraph [ref=e999]: "-"
+                      - cell [ref=e1000]:
+                        - paragraph [ref=e1001]: "-"
+              - generic [ref=e1003]:
+                - heading "Professional" [level=3] [ref=e1004]
+                - table [ref=e1009]:
+                  - rowgroup [ref=e1010]:
+                    - row [ref=e1011]:
+                      - cell [ref=e1012]:
+                        - paragraph [ref=e1013]: Professional
+                      - cell "GPT‑6 Astra" [ref=e1014]:
+                        - paragraph [ref=e1015]:
+                          - generic [ref=e1016]: GPT‑6 Astra
+                      - cell "GPT‑5.6 Sol" [ref=e1017]:
+                        - paragraph [ref=e1018]:
+                          - generic [ref=e1019]: GPT‑5.6 Sol
+                      - cell [ref=e1020]:
+                        - paragraph [ref=e1021]: Claude Fable 5.1
+                      - cell [ref=e1022]:
+                        - paragraph [ref=e1023]: Claude Fable 5
+                      - cell [ref=e1024]:
+                        - paragraph [ref=e1025]: Claude Opus 5
+                      - cell [ref=e1026]:
+                        - paragraph [ref=e1027]: Gemini 3.8 Flash
+                    - row [ref=e1028]:
+                      - cell [ref=e1029]:
+                        - paragraph [ref=e1030]: AutomationBench
+                      - cell [ref=e1031]:
+                        - paragraph [ref=e1032]: 41.4%
+                      - cell [ref=e1033]:
+                        - paragraph [ref=e1034]: 18.1%
+                      - cell [ref=e1035]:
+                        - paragraph [ref=e1036]: 31.4%
+                      - cell [ref=e1037]:
+                        - paragraph [ref=e1038]: 17.4%
+                      - cell [ref=e1039]:
+                        - paragraph [ref=e1040]: 26.9%
+                      - cell [ref=e1041]:
+                        - paragraph [ref=e1042]: "-"
+                    - row [ref=e1043]:
+                      - cell [ref=e1044]:
+                        - paragraph [ref=e1045]: BenchCAD
+                      - cell [ref=e1046]:
+                        - paragraph [ref=e1047]: 95.9%
+                      - cell [ref=e1048]:
+                        - paragraph [ref=e1049]: 83.3%
+                      - cell [ref=e1050]:
+                        - paragraph [ref=e1051]:
+                          - text: 84.3%
+                          - superscript [ref=e1052]:
+                            - link "5" [ref=e1054] [cursor=pointer]:
+                              - /url: "#citation-bottom-5:2"
+                      - cell [ref=e1055]:
+                        - paragraph [ref=e1056]:
+                          - text: 67.5%
+                          - superscript [ref=e1057]:
+                            - link "5" [ref=e1059] [cursor=pointer]:
+                              - /url: "#citation-bottom-5:3"
+                      - cell [ref=e1060]:
+                        - paragraph [ref=e1061]:
+                          - text: 82.1%
+                          - superscript [ref=e1062]:
+                            - link "5" [ref=e1064] [cursor=pointer]:
+                              - /url: "#citation-bottom-5:4"
+                      - cell [ref=e1065]:
+                        - paragraph [ref=e1066]: "-"
+                    - row [ref=e1067]:
+                      - cell [ref=e1068]:
+                        - paragraph [ref=e1069]: BrowseComp
+                      - cell [ref=e1070]:
+                        - paragraph [ref=e1071]: 91.5%
+                      - cell [ref=e1072]:
+                        - paragraph [ref=e1073]: 90.4%
+                      - cell [ref=e1074]:
+                        - paragraph [ref=e1075]: "-"
+                      - cell [ref=e1076]:
+                        - paragraph [ref=e1077]: 87.4%
+                      - cell [ref=e1078]:
+                        - paragraph [ref=e1079]: 90.8%
+                      - cell [ref=e1080]:
+                        - paragraph [ref=e1081]: "-"
+                    - row [ref=e1082]:
+                      - cell [ref=e1083]:
+                        - paragraph [ref=e1084]: OpenScore String Quartets (1 - OMR-NED)
+                      - cell [ref=e1085]:
+                        - paragraph [ref=e1086]: "0.84"
+                      - cell [ref=e1087]:
+                        - paragraph [ref=e1088]: "0.19"
+                      - cell [ref=e1089]:
+                        - paragraph [ref=e1090]: "-"
+                      - cell [ref=e1091]:
+                        - paragraph [ref=e1092]: "-"
+                      - cell [ref=e1093]:
+                        - paragraph [ref=e1094]: "-"
+                      - cell [ref=e1095]:
+                        - paragraph [ref=e1096]: "-"
+                    - row [ref=e1097]:
+                      - cell [ref=e1098]:
+                        - paragraph [ref=e1099]: Internal Design Tasks
+                      - cell [ref=e1100]:
+                        - paragraph [ref=e1101]: 50.0%
+                      - cell [ref=e1102]:
+                        - paragraph [ref=e1103]: 47.4%
+                      - cell [ref=e1104]:
+                        - paragraph [ref=e1105]: "-"
+                      - cell [ref=e1106]:
+                        - paragraph [ref=e1107]: 35.8%
+                      - cell [ref=e1108]:
+                        - paragraph [ref=e1109]: "-"
+                      - cell [ref=e1110]:
+                        - paragraph [ref=e1111]: "-"
+                    - row [ref=e1112]:
+                      - cell [ref=e1113]:
+                        - paragraph [ref=e1114]: Internal Data Science Tasks
+                      - cell [ref=e1115]:
+                        - paragraph [ref=e1116]: 40.9%
+                      - cell [ref=e1117]:
+                        - paragraph [ref=e1118]: 30.5%
+                      - cell [ref=e1119]:
+                        - paragraph [ref=e1120]: "-"
+                      - cell [ref=e1121]:
+                        - paragraph [ref=e1122]: 34.7%
+                      - cell [ref=e1123]:
+                        - paragraph [ref=e1124]: "-"
+                      - cell [ref=e1125]:
+                        - paragraph [ref=e1126]: "-"
+                    - row [ref=e1127]:
+                      - cell [ref=e1128]:
+                        - paragraph [ref=e1129]: Artificial Analysis Intelligence Index v4.1.1
+                      - cell [ref=e1130]:
+                        - paragraph [ref=e1131]: "61.2"
+                      - cell [ref=e1132]:
+                        - paragraph [ref=e1133]: "60.9"
+                      - cell [ref=e1134]:
+                        - paragraph [ref=e1135]: "65.7"
+                      - cell [ref=e1136]:
+                        - paragraph [ref=e1137]: "62.1"
+                      - cell [ref=e1138]:
+                        - paragraph [ref=e1139]: "63.1"
+                      - cell [ref=e1140]:
+                        - paragraph [ref=e1141]: "58.7"
+              - generic [ref=e1143]:
+                - heading "Coding" [level=3] [ref=e1144]
+                - table [ref=e1149]:
+                  - rowgroup [ref=e1150]:
+                    - row [ref=e1151]:
+                      - cell [ref=e1152]:
+                        - strong [ref=e1153]: Coding
+                      - cell [ref=e1154]:
+                        - strong [ref=e1155]: GPT‑6 Astra
+                      - cell [ref=e1156]:
+                        - strong [ref=e1157]: GPT‑5.6 Sol
+                      - cell [ref=e1158]:
+                        - strong [ref=e1159]: Claude Fable 5.1
+                      - cell [ref=e1160]:
+                        - strong [ref=e1161]: Claude Fable 5
+                      - cell [ref=e1162]:
+                        - strong [ref=e1163]: Claude Opus 5
+                      - cell [ref=e1164]:
+                        - strong [ref=e1165]: Gemini 3.8 Flash
+                  - rowgroup [ref=e1166]:
+                    - row [ref=e1167]:
+                      - cell "Terminal-Bench 4.0" [ref=e1168]
+                      - cell "57.9%" [ref=e1169]
+                      - cell "37.3%" [ref=e1170]
+                      - cell "55.8%" [ref=e1171]
+                      - cell "44.5%" [ref=e1172]
+                      - cell "52.6%" [ref=e1173]
+                      - cell "19.1%" [ref=e1174]
+                    - row [ref=e1175]:
+                      - cell "DeepSWE v1.1" [ref=e1176]
+                      - cell "74.1%" [ref=e1177]
+                      - cell "72.7%" [ref=e1178]
+                      - cell "67.4%" [ref=e1179]
+                      - cell "69.9%" [ref=e1180]
+                      - cell "73.7%" [ref=e1181]
+                      - cell "73.8%" [ref=e1182]
+                    - row [ref=e1183]:
+                      - cell "FrontierCode 1.1 Extended (score)" [ref=e1184]
+                      - cell [ref=e1185]:
+                        - text: 64.5%
+                        - superscript [ref=e1186]:
+                          - link "8" [ref=e1188] [cursor=pointer]:
+                            - /url: "#citation-bottom-8:2"
+                      - cell "60.6%" [ref=e1189]
+                      - cell "63.6%" [ref=e1190]
+                      - cell "64.9%" [ref=e1191]
+                      - cell "63.6%" [ref=e1192]
+                      - cell "56.3%" [ref=e1193]
+                    - row [ref=e1194]:
+                      - cell "FrontierCode 1.1 Main (score)" [ref=e1195]
+                      - cell [ref=e1196]:
+                        - text: 53.3%
+                        - superscript [ref=e1197]:
+                          - link "8" [ref=e1199] [cursor=pointer]:
+                            - /url: "#citation-bottom-8:3"
+                      - cell "47.5%" [ref=e1200]
+                      - cell "50.9%" [ref=e1201]
+                      - cell "53.5%" [ref=e1202]
+                      - cell "53.4%" [ref=e1203]
+                      - cell "43.6%" [ref=e1204]
+                    - row [ref=e1205]:
+                      - cell "Internal Database Migration Tasks" [ref=e1206]
+                      - cell "63.9%" [ref=e1207]
+                      - cell "42.7%" [ref=e1208]
+                      - cell "57.8%" [ref=e1209]
+                      - cell "50.3%" [ref=e1210]
+                      - cell "-" [ref=e1211]
+                      - cell "-" [ref=e1212]
+                    - row [ref=e1213]:
+                      - cell "Artificial Analysis Coding Agent Index v1.4" [ref=e1214]
+                      - cell "67.0" [ref=e1215]
+                      - cell "65.1" [ref=e1216]
+                      - cell "-" [ref=e1217]
+                      - cell "67.2" [ref=e1218]
+                      - cell "68.1" [ref=e1219]
+                      - cell "61.2" [ref=e1220]
+              - generic [ref=e1222]:
+                - heading "Academic" [level=3] [ref=e1223]
+                - table [ref=e1228]:
+                  - rowgroup [ref=e1229]:
+                    - row [ref=e1230]:
+                      - cell [ref=e1231]:
+                        - paragraph [ref=e1232]: Academic
+                      - cell "GPT‑6 Astra" [ref=e1233]:
+                        - paragraph [ref=e1234]:
+                          - generic [ref=e1235]: GPT‑6 Astra
+                      - cell "GPT‑5.6 Sol" [ref=e1236]:
+                        - paragraph [ref=e1237]:
+                          - generic [ref=e1238]: GPT‑5.6 Sol
+                      - cell [ref=e1239]:
+                        - paragraph [ref=e1240]: Claude Fable 5.1
+                      - cell [ref=e1241]:
+                        - paragraph [ref=e1242]: Claude Fable 5
+                      - cell [ref=e1243]:
+                        - paragraph [ref=e1244]: Claude Opus 5
+                      - cell [ref=e1245]:
+                        - paragraph [ref=e1246]: Gemini 3.8 Flash
+                    - row [ref=e1247]:
+                      - cell [ref=e1248]:
+                        - paragraph [ref=e1249]: Terminal-Bench Science 0.1
+                      - cell [ref=e1250]:
+                        - paragraph [ref=e1251]: 64.6%
+                      - cell [ref=e1252]:
+                        - paragraph [ref=e1253]: 22.4%
+                      - cell [ref=e1254]:
+                        - paragraph [ref=e1255]: 52.6%
+                      - cell [ref=e1256]:
+                        - paragraph [ref=e1257]: 21.4%
+                      - cell [ref=e1258]:
+                        - paragraph [ref=e1259]: 30.0%
+                      - cell [ref=e1260]:
+                        - paragraph [ref=e1261]: "-"
+                    - row [ref=e1262]:
+                      - cell [ref=e1263]:
+                        - paragraph [ref=e1264]: FrontierMath Tier 4 (v2)
+                      - cell [ref=e1265]:
+                        - paragraph [ref=e1266]: 97.6%
+                      - cell [ref=e1267]:
+                        - paragraph [ref=e1268]: 83.0%
+                      - cell [ref=e1269]:
+                        - paragraph [ref=e1270]: 87.8%
+                      - cell [ref=e1271]:
+                        - paragraph [ref=e1272]: 90.2%
+                      - cell [ref=e1273]:
+                        - paragraph [ref=e1274]: 73.2%
+                      - cell [ref=e1275]:
+                        - paragraph [ref=e1276]: "-"
+                    - row [ref=e1277]:
+                      - cell [ref=e1278]:
+                        - paragraph [ref=e1279]: GPQA Diamond
+                      - cell [ref=e1280]:
+                        - paragraph [ref=e1281]: 96.0%
+                      - cell [ref=e1282]:
+                        - paragraph [ref=e1283]: 94.6%
+                      - cell [ref=e1284]:
+                        - paragraph [ref=e1285]: 93.7%
+                      - cell [ref=e1286]:
+                        - paragraph [ref=e1287]: 92.6%
+                      - cell [ref=e1288]:
+                        - paragraph [ref=e1289]: 93.7%
+                      - cell [ref=e1290]:
+                        - paragraph [ref=e1291]: 95.3%
+                    - row [ref=e1292]:
+                      - cell [ref=e1293]:
+                        - paragraph [ref=e1294]: Humanity's Last Exam (w/ tools)
+                      - cell [ref=e1295]:
+                        - paragraph [ref=e1296]: 57.2%
+                      - cell [ref=e1297]:
+                        - paragraph [ref=e1298]: "-"
+                      - cell [ref=e1299]:
+                        - paragraph [ref=e1300]: 65.0%
+                      - cell [ref=e1301]:
+                        - paragraph [ref=e1302]: 63.8%
+                      - cell [ref=e1303]:
+                        - paragraph [ref=e1304]: 63.6%
+                      - cell [ref=e1305]:
+                        - paragraph [ref=e1306]: "-"
+              - generic [ref=e1308]:
+                - heading "วิทยาศาสตร์และสุขภาพ" [level=3] [ref=e1309]
+                - table [ref=e1314]:
+                  - rowgroup [ref=e1315]:
+                    - row [ref=e1316]:
+                      - cell [ref=e1317]:
+                        - strong [ref=e1318]: Science and Health
+                      - cell [ref=e1319]:
+                        - strong [ref=e1320]: GPT‑6 Astra
+                      - cell [ref=e1321]:
+                        - strong [ref=e1322]: GPT‑5.6 Sol
+                      - cell [ref=e1323]:
+                        - strong [ref=e1324]: Claude Fable 5.1
+                      - cell [ref=e1325]:
+                        - strong [ref=e1326]: Claude Fable 5
+                      - cell [ref=e1327]:
+                        - strong [ref=e1328]: Claude Opus 5
+                      - cell [ref=e1329]:
+                        - strong [ref=e1330]: Gemini 3.8 Flash
+                  - rowgroup [ref=e1331]:
+                    - row [ref=e1332]:
+                      - cell "GeneBench Pro" [ref=e1333]
+                      - cell "37.1%" [ref=e1334]
+                      - cell "32.3%" [ref=e1335]
+                      - cell "-" [ref=e1336]
+                      - cell "-" [ref=e1337]
+                      - cell "-" [ref=e1338]
+                      - cell "-" [ref=e1339]
+                    - row [ref=e1340]:
+                      - cell "MedChemBench (Internal)" [ref=e1341]
+                      - cell "49.3%" [ref=e1342]
+                      - cell "47.4%" [ref=e1343]
+                      - cell "-" [ref=e1344]
+                      - cell "-" [ref=e1345]
+                      - cell "-" [ref=e1346]
+                      - cell "-" [ref=e1347]
+                    - row [ref=e1348]:
+                      - cell "LifeSciBench" [ref=e1349]
+                      - cell "60.3%" [ref=e1350]
+                      - cell "59.9%" [ref=e1351]
+                      - cell "-" [ref=e1352]
+                      - cell "-" [ref=e1353]
+                      - cell "-" [ref=e1354]
+                      - cell "-" [ref=e1355]
+                    - row [ref=e1356]:
+                      - cell "HealthBench Professional (length-adjusted)" [ref=e1357]
+                      - cell "63.4%" [ref=e1358]
+                      - cell "60.5%" [ref=e1359]
+                      - cell [ref=e1360]:
+                        - text: 58.1%
+                        - superscript [ref=e1361]:
+                          - link "11" [ref=e1363] [cursor=pointer]:
+                            - /url: "#citation-bottom-11:2"
+                      - cell [ref=e1364]:
+                        - text: 60.9%
+                        - superscript [ref=e1365]:
+                          - link "11" [ref=e1367] [cursor=pointer]:
+                            - /url: "#citation-bottom-11:3"
+                      - cell [ref=e1368]:
+                        - text: 56.4%
+                        - superscript [ref=e1369]:
+                          - link "11" [ref=e1371] [cursor=pointer]:
+                            - /url: "#citation-bottom-11:4"
+                      - cell "52.1%" [ref=e1372]
+              - generic [ref=e1374]:
+                - heading "ความปลอดภัยทางไซเบอร์" [level=3] [ref=e1375]
+                - table [ref=e1380]:
+                  - rowgroup [ref=e1381]:
+                    - row [ref=e1382]:
+                      - cell [ref=e1383]:
+                        - strong [ref=e1384]: Cybersecurity
+                      - cell [ref=e1385]:
+                        - strong [ref=e1386]: GPT‑6 Astra
+                      - cell [ref=e1387]:
+                        - strong [ref=e1388]: GPT‑5.6 Sol
+                      - cell [ref=e1389]:
+                        - strong [ref=e1390]: Claude Fable 5.1
+                      - cell [ref=e1391]:
+                        - strong [ref=e1392]: Claude Fable 5
+                      - cell [ref=e1393]:
+                        - strong [ref=e1394]: Claude Opus 5
+                      - cell [ref=e1395]:
+                        - strong [ref=e1396]: Gemini 3.8 Flash
+                  - rowgroup [ref=e1397]:
+                    - row [ref=e1398]:
+                      - cell "ExploitBench" [ref=e1399]
+                      - cell "100.0%" [ref=e1400]
+                      - cell "78.5%" [ref=e1401]
+                      - cell "-" [ref=e1402]
+                      - cell "-" [ref=e1403]
+                      - cell "70%" [ref=e1404]
+                      - cell "-" [ref=e1405]
+                    - row [ref=e1406]:
+                      - cell "ExploitGym" [ref=e1407]
+                      - cell [ref=e1408]:
+                        - text: 42.4%
+                        - superscript [ref=e1409]:
+                          - link "13" [ref=e1411] [cursor=pointer]:
+                            - /url: "#citation-bottom-13:2"
+                      - cell [ref=e1412]:
+                        - text: 30.3%
+                        - superscript [ref=e1413]:
+                          - link "13" [ref=e1415] [cursor=pointer]:
+                            - /url: "#citation-bottom-13:3"
+                      - cell [ref=e1416]:
+                        - text: 30.4%
+                        - superscript [ref=e1417]:
+                          - link "17" [ref=e1419] [cursor=pointer]:
+                            - /url: "#citation-bottom-17:2"
+                      - cell [ref=e1420]:
+                        - text: 28.4%
+                        - superscript [ref=e1421]:
+                          - link "17" [ref=e1423] [cursor=pointer]:
+                            - /url: "#citation-bottom-17:3"
+                      - cell "22.0%" [ref=e1424]
+                      - cell "-" [ref=e1425]
+                    - row [ref=e1426]:
+                      - cell "ExploitBench (June-Aug 2026)" [ref=e1427]
+                      - cell "39.0%" [ref=e1428]
+                      - cell "5.5%" [ref=e1429]
+                      - cell "-" [ref=e1430]
+                      - cell "-" [ref=e1431]
+                      - cell "-" [ref=e1432]
+                      - cell "-" [ref=e1433]
+                    - row [ref=e1434]:
+                      - cell "SRE-Bench" [ref=e1435]
+                      - cell "88.0%" [ref=e1436]
+                      - cell "55.9%" [ref=e1437]
+                      - cell "-" [ref=e1438]
+                      - cell "-" [ref=e1439]
+                      - cell "12.5%" [ref=e1440]
+                      - cell "-" [ref=e1441]
+                    - row [ref=e1442]:
+                      - cell "SEC-Bench Pro" [ref=e1443]
+                      - cell "85.4%" [ref=e1444]
+                      - cell "79.1%" [ref=e1445]
+                      - cell "-" [ref=e1446]
+                      - cell "-" [ref=e1447]
+                      - cell "-" [ref=e1448]
+                      - cell "-" [ref=e1449]
+              - generic [ref=e1451]:
+                - heading "การกำหนดการทำงานให้เหมาะสมและสอดคล้องกับเจตนาของมนุษย์:" [level=3] [ref=e1452]
+                - table [ref=e1457]:
+                  - rowgroup [ref=e1458]:
+                    - row [ref=e1459]:
+                      - cell [ref=e1460]:
+                        - paragraph [ref=e1461]: "การกำหนดการทำงานให้เหมาะสมและสอดคล้องกับเจตนาของมนุษย์:"
+                      - cell "GPT‑6 Astra" [ref=e1462]:
+                        - paragraph [ref=e1463]:
+                          - generic [ref=e1464]: GPT‑6 Astra
+                      - cell "GPT‑5.6 Sol" [ref=e1465]:
+                        - paragraph [ref=e1466]:
+                          - generic [ref=e1467]: GPT‑5.6 Sol
+                      - cell [ref=e1468]:
+                        - paragraph [ref=e1469]: Claude Fable 5.1
+                      - cell [ref=e1470]:
+                        - paragraph [ref=e1471]: Claude Fable 5
+                      - cell [ref=e1472]:
+                        - paragraph [ref=e1473]: Claude Opus 5
+                      - cell [ref=e1474]:
+                        - paragraph [ref=e1475]: Gemini 3.8 Flash
+                    - row [ref=e1476]:
+                      - cell [ref=e1477]:
+                        - paragraph [ref=e1478]: เกณฑ์มาตรฐานความปลอดภัยในการใช้คอมพิวเตอร์ภายใน (ยิ่งต่ำยิ่งดี)
+                      - cell [ref=e1479]:
+                        - paragraph [ref=e1480]: 2.4%
+                      - cell [ref=e1481]:
+                        - paragraph [ref=e1482]: 22.0%
+                      - cell [ref=e1483]:
+                        - paragraph [ref=e1484]: 9.5%
+                      - cell [ref=e1485]:
+                        - paragraph [ref=e1486]: 18.3%
+                      - cell [ref=e1487]:
+                        - paragraph [ref=e1488]: 11.5%
+                      - cell [ref=e1489]:
+                        - paragraph [ref=e1490]: "-"
+                    - row [ref=e1491]:
+                      - cell [ref=e1492]:
+                        - paragraph [ref=e1493]: เกณฑ์มาตรฐานความปลอดภัยในการใช้งานคอมพิวเตอร์ภายใน พร้อม AutoReview (ยิ่งต่ำยิ่งดี)
+                      - cell [ref=e1494]:
+                        - paragraph [ref=e1495]: 1.8%
+                      - cell [ref=e1496]:
+                        - paragraph [ref=e1497]: 4.3%
+                      - cell [ref=e1498]:
+                        - paragraph [ref=e1499]: "-"
+                      - cell [ref=e1500]:
+                        - paragraph [ref=e1501]: "-"
+                      - cell [ref=e1502]:
+                        - paragraph [ref=e1503]: "-"
+                      - cell [ref=e1504]:
+                        - paragraph [ref=e1505]: "-"
+                    - row [ref=e1506]:
+                      - cell [ref=e1507]:
+                        - paragraph [ref=e1508]: เกณฑ์มาตรฐานภายในสำหรับการหลีกเลี่ยงมาตรการป้องกัน (ยิ่งต่ำยิ่งดี)
+                      - cell [ref=e1509]:
+                        - paragraph [ref=e1510]: 0.00%
+                      - cell [ref=e1511]:
+                        - paragraph [ref=e1512]: 0.29%
+                      - cell [ref=e1513]:
+                        - paragraph [ref=e1514]: "-"
+                      - cell [ref=e1515]:
+                        - paragraph [ref=e1516]: "-"
+                      - cell [ref=e1517]:
+                        - paragraph [ref=e1518]: "-"
+                      - cell [ref=e1519]:
+                        - paragraph [ref=e1520]: "-"
+                    - row [ref=e1521]:
+                      - cell [ref=e1522]:
+                        - paragraph [ref=e1523]: ExploitGym Honeypot (ยิ่งต่ำยิ่งดี)
+                      - cell [ref=e1524]:
+                        - paragraph [ref=e1525]: 0.0%
+                      - cell [ref=e1526]:
+                        - paragraph [ref=e1527]: 48.2%
+                      - cell [ref=e1528]:
+                        - paragraph [ref=e1529]: "-"
+                      - cell [ref=e1530]:
+                        - paragraph [ref=e1531]: "-"
+                      - cell [ref=e1532]:
+                        - paragraph [ref=e1533]: "-"
+                      - cell [ref=e1534]:
+                        - paragraph [ref=e1535]: "-"
+                    - row [ref=e1536]:
+                      - cell [ref=e1537]:
+                        - paragraph [ref=e1538]: Impossible ExploitGym
+                      - cell [ref=e1539]:
+                        - paragraph [ref=e1540]: 100.0%
+                      - cell [ref=e1541]:
+                        - paragraph [ref=e1542]: "-"
+                      - cell [ref=e1543]:
+                        - paragraph [ref=e1544]: "-"
+                      - cell [ref=e1545]:
+                        - paragraph [ref=e1546]: "-"
+                      - cell [ref=e1547]:
+                        - paragraph [ref=e1548]: "-"
+                      - cell [ref=e1549]:
+                        - paragraph [ref=e1550]: "-"
+                    - row [ref=e1551]:
+                      - cell [ref=e1552]:
+                        - paragraph [ref=e1553]: เกณฑ์มาตรฐานภายในสำหรับวัดการให้ข้อมูลที่ไม่เป็นจริง (ยิ่งต่ำยิ่งดี)
+                      - cell [ref=e1554]:
+                        - paragraph [ref=e1555]: 4.2%
+                      - cell [ref=e1556]:
+                        - paragraph [ref=e1557]: 12.2%
+                      - cell [ref=e1558]:
+                        - paragraph [ref=e1559]: "-"
+                      - cell [ref=e1560]:
+                        - paragraph [ref=e1561]: "-"
+                      - cell [ref=e1562]:
+                        - paragraph [ref=e1563]: "-"
+                      - cell [ref=e1564]:
+                        - paragraph [ref=e1565]: "-"
+              - generic [ref=e1567]:
+                - heading "บริบทยาว" [level=3] [ref=e1568]
+                - table [ref=e1573]:
+                  - rowgroup [ref=e1574]:
+                    - row [ref=e1575]:
+                      - cell [ref=e1576]:
+                        - paragraph [ref=e1577]: บริบทยาว
+                      - cell "GPT‑6 Astra" [ref=e1578]:
+                        - paragraph [ref=e1579]:
+                          - generic [ref=e1580]: GPT‑6 Astra
+                      - cell "GPT‑5.6 Sol" [ref=e1581]:
+                        - paragraph [ref=e1582]:
+                          - generic [ref=e1583]: GPT‑5.6 Sol
+                      - cell [ref=e1584]:
+                        - paragraph [ref=e1585]: Claude Fable 5.1
+                      - cell [ref=e1586]:
+                        - paragraph [ref=e1587]: Claude Fable 5
+                      - cell [ref=e1588]:
+                        - paragraph [ref=e1589]: Claude Opus 5
+                      - cell [ref=e1590]:
+                        - paragraph [ref=e1591]: Gemini 3.8 Flash
+                    - row [ref=e1592]:
+                      - cell [ref=e1593]:
+                        - paragraph [ref=e1594]: OpenAI MRCR v2 8-needle 256K-512K
+                      - cell [ref=e1595]:
+                        - paragraph [ref=e1596]: 100.0%
+                      - cell [ref=e1597]:
+                        - paragraph [ref=e1598]: 91.5%
+                      - cell [ref=e1599]:
+                        - paragraph [ref=e1600]: "-"
+                      - cell [ref=e1601]:
+                        - paragraph [ref=e1602]: "-"
+                      - cell [ref=e1603]:
+                        - paragraph [ref=e1604]: "-"
+                      - cell [ref=e1605]:
+                        - paragraph [ref=e1606]: "-"
+                    - row [ref=e1607]:
+                      - cell [ref=e1608]:
+                        - paragraph [ref=e1609]: OpenAI MRCR v2 8-needle 512K-1M
+                      - cell [ref=e1610]:
+                        - paragraph [ref=e1611]: 96.3%
+                      - cell [ref=e1612]:
+                        - paragraph [ref=e1613]: 73.8%
+                      - cell [ref=e1614]:
+                        - paragraph [ref=e1615]: "-"
+                      - cell [ref=e1616]:
+                        - paragraph [ref=e1617]: "-"
+                      - cell [ref=e1618]:
+                        - paragraph [ref=e1619]: "-"
+                      - cell [ref=e1620]:
+                        - paragraph [ref=e1621]: "-"
+              - generic [ref=e1623]:
+                - heading "การให้เหตุผลเชิงนามธรรม" [level=3] [ref=e1624]
+                - table [ref=e1629]:
+                  - rowgroup [ref=e1630]:
+                    - row [ref=e1631]:
+                      - cell [ref=e1632]:
+                        - strong [ref=e1633]: Abstract reasoning
+                      - cell [ref=e1634]:
+                        - strong [ref=e1635]: GPT‑6 Astra
+                      - cell [ref=e1636]:
+                        - strong [ref=e1637]: GPT‑5.6 Sol
+                      - cell [ref=e1638]:
+                        - strong [ref=e1639]: Claude Fable 5.1
+                      - cell [ref=e1640]:
+                        - strong [ref=e1641]: Claude Fable 5
+                      - cell [ref=e1642]:
+                        - strong [ref=e1643]: Claude Opus 5
+                      - cell [ref=e1644]:
+                        - strong [ref=e1645]: Gemini 3.8 Flash
+                  - rowgroup [ref=e1646]:
+                    - row [ref=e1647]:
+                      - cell "ARC-AGI-3" [ref=e1648]
+                      - cell [ref=e1649]:
+                        - text: 99.9%
+                        - superscript [ref=e1650]:
+                          - link "1" [ref=e1652] [cursor=pointer]:
+                            - /url: "#citation-bottom-1"
+                      - cell "7.8%" [ref=e1653]
+                      - cell "-" [ref=e1654]
+                      - cell "-" [ref=e1655]
+                      - cell "30.2%" [ref=e1656]
+                      - cell "-" [ref=e1657]
+                    - row [ref=e1658]:
+                      - cell "ARC-AGI-2" [ref=e1659]
+                      - cell "95.0%" [ref=e1660]
+                      - cell "92.5%" [ref=e1661]
+                      - cell "90.0%" [ref=e1662]
+                      - cell "89.2%" [ref=e1663]
+                      - cell "90.4%" [ref=e1664]
+                      - cell "-" [ref=e1665]
+                    - row [ref=e1666]:
+                      - cell "ARC-AGI-1" [ref=e1667]
+                      - cell "98.5%" [ref=e1668]
+                      - cell "97.5%" [ref=e1669]
+                      - cell "97.5%" [ref=e1670]
+                      - cell "98.5%" [ref=e1671]
+                      - cell "97.5%" [ref=e1672]
+                      - cell "-" [ref=e1673]
+              - paragraph [ref=e1676]: คะแนนการประเมินเป็นค่าสูงสุดในทุกระดับความพยายาม การประเมิน GPT ดำเนินการในสภาพแวดล้อมการวิจัยของเราหรือผ่าน API ของเรา ซึ่งอาจให้ผลลัพธ์ที่แตกต่างจาก ChatGPT เวอร์ชันใช้งานจริงเล็กน้อย เนื่องจากความแตกต่างของพรอมต์ระบบ เครื่องมือที่พร้อมใช้งาน เป็นต้น
+            - generic [ref=e1679]:
+              - list [ref=e1681]:
+                - listitem [ref=e1682]:
+                  - link "2569" [ref=e1683] [cursor=pointer]:
+                    - /url: /th-TH/news/?tags=2026
+              - generic [ref=e1684]:
+                - heading "FOOTNOTES" [level=2] [ref=e1685]
+                - list [ref=e1687]:
+                  - listitem [ref=e1688]:
+                    - generic [ref=e1689]: "1"
+                    - paragraph [ref=e1691]:
+                      - text: On ARC-AGI-3, GPT-6 Astra was run with
+                      - link "our responses API harness⁠" [ref=e1692] [cursor=pointer]:
+                        - /url: /th-TH/index/how-two-settings-tripled-our-arc-agi-3-scores/
+                      - text: ", which changes two settings to better match real-world performance. The changes do not specifically target ARC-AGI-3."
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 1" [ref=e1694] [cursor=pointer]:
+                        - /url: "#citation-top-1"
+                  - listitem [ref=e1697]:
+                    - generic [ref=e1698]: "2"
+                    - paragraph [ref=e1700]:
+                      - text: GPT-5.6 Sol refers to the version available in our API, ChatGPT Codex, and ChatGPT Work.
+                      - link "The version in ChatGPT Chat is slightly different.⁠" [ref=e1701] [cursor=pointer]:
+                        - /url: /th-TH/index/improving-gpt-5-6-sol-in-chatgpt/
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 2" [ref=e1703] [cursor=pointer]:
+                        - /url: "#citation-top-2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 2" [ref=e1707] [cursor=pointer]:
+                        - /url: "#citation-top-2:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 2" [ref=e1711] [cursor=pointer]:
+                        - /url: "#citation-top-2:3"
+                  - listitem [ref=e1714]:
+                    - generic [ref=e1715]: "3"
+                    - paragraph [ref=e1717]:
+                      - text: OSWorld V2-Offline is a subset of the original OSWorld V2 that works without internet access. Claude model performance on OSWorld-V2 Offline was reproduced by the authors
+                      - generic [ref=e1718]: "on"
+                      - link "the official leaderboard⁠ (เปิดในหน้าต่างใหม่)" [ref=e1719] [cursor=pointer]:
+                        - /url: https://osworld-v2.xlang.ai/
+                        - generic [ref=e1720]: the official leaderboard
+                        - text: ⁠
+                        - generic [ref=e1721]: (เปิดในหน้าต่างใหม่)
+                      - generic [ref=e1722]: .
+                      - text: On OSWorld 2.0, the scores for Claude use the official settings, and not the modified tasks and modified grading from the Fable 5.1 System Card.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 3" [ref=e1724] [cursor=pointer]:
+                        - /url: "#citation-top-3"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 3" [ref=e1728] [cursor=pointer]:
+                        - /url: "#citation-top-3:2"
+                  - listitem [ref=e1731]:
+                    - generic [ref=e1732]: "4"
+                    - paragraph [ref=e1734]:
+                      - text: Model times are the reported elapsed times for the corresponding demonstration runs. The displayed clips are edited excerpts.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 4" [ref=e1736] [cursor=pointer]:
+                        - /url: "#citation-top-4"
+                  - listitem [ref=e1739]:
+                    - generic [ref=e1740]: "5"
+                    - paragraph [ref=e1742]:
+                      - text: On BenchCAD, Claude's scores reflect 3 modifications to the eval, detailed in the
+                      - link "Fable 5.1 System Card⁠ (เปิดในหน้าต่างใหม่)" [ref=e1743] [cursor=pointer]:
+                        - /url: https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf
+                        - text: Fable 5.1 System Card⁠
+                        - generic [ref=e1744]: (เปิดในหน้าต่างใหม่)
+                      - text: .
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 5" [ref=e1746] [cursor=pointer]:
+                        - /url: "#citation-top-5"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 5" [ref=e1750] [cursor=pointer]:
+                        - /url: "#citation-top-5:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 5" [ref=e1754] [cursor=pointer]:
+                        - /url: "#citation-top-5:3"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 4 ของเชิงอรรถ 5" [ref=e1758] [cursor=pointer]:
+                        - /url: "#citation-top-5:4"
+                  - listitem [ref=e1761]:
+                    - generic [ref=e1762]: "6"
+                    - paragraph [ref=e1764]:
+                      - text: Guang Yang, Victoria Ebert, Nazif Tamer, Brian Siyuan Zheng, Luiza Pozzobon, and Noah A. Smith. “
+                      - 'link "LEGATO: Large-scale End-to-end Generalizable Approach to Typeset OMR⁠ (เปิดในหน้าต่างใหม่)" [ref=e1765] [cursor=pointer]':
+                        - /url: https://arxiv.org/abs/2506.19065
+                        - text: "LEGATO: Large-scale End-to-end Generalizable Approach to Typeset OMR⁠"
+                        - generic [ref=e1766]: (เปิดในหน้าต่างใหม่)
+                      - text: .” arXiv:2506.19065, 2025.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 6" [ref=e1768] [cursor=pointer]:
+                        - /url: "#citation-top-6"
+                  - listitem [ref=e1771]:
+                    - generic [ref=e1772]: "7"
+                    - paragraph [ref=e1774]:
+                      - text: Mark R. H. Gotham, Maureen Redbond, Bruno Bower, and Peter Jonas. “
+                      - link "The OpenScore String Quartet Corpus⁠ (เปิดในหน้าต่างใหม่)" [ref=e1775] [cursor=pointer]:
+                        - /url: https://doi.org/10.1145/3625135.3625155
+                        - text: The OpenScore String Quartet Corpus⁠
+                        - generic [ref=e1776]: (เปิดในหน้าต่างใหม่)
+                      - text: .” Proceedings of the 10th International Conference on Digital Libraries for Musicology, pp. 49–57. ACM, 2023.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 7" [ref=e1778] [cursor=pointer]:
+                        - /url: "#citation-top-7"
+                  - listitem [ref=e1781]:
+                    - generic [ref=e1782]: "8"
+                    - paragraph [ref=e1784]:
+                      - text: On FrontierCode, GPT-6 Astra was run with a developer message similar to a
+                      - link "section of its developer message in Codex⁠ (เปิดในหน้าต่างใหม่)" [ref=e1785] [cursor=pointer]:
+                        - /url: https://developers.openai.com/api/docs/guides/latest-model#prompting-best-practices
+                        - generic [ref=e1786]: section of its developer message in Codex
+                        - text: ⁠
+                        - generic [ref=e1787]: (เปิดในหน้าต่างใหม่)
+                      - text: ": \"Avoid creating excessive test files. Create a new test file only when required by repository conventions or when no existing file is a suitable home. Avoid unrelated cleanup and unnecessary complexity. Reuse suitable existing utilities. Read relevant repository instructions and inspect nearby code, tests, documentation, and CI. Follow established conventions. The goal is clean, mergeable code.\" The prompt was not optimized for the eval."
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 8" [ref=e1789] [cursor=pointer]:
+                        - /url: "#citation-top-8"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 8" [ref=e1793] [cursor=pointer]:
+                        - /url: "#citation-top-8:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 8" [ref=e1797] [cursor=pointer]:
+                        - /url: "#citation-top-8:3"
+                  - listitem [ref=e1800]:
+                    - generic [ref=e1801]: "9"
+                    - paragraph [ref=e1803]:
+                      - text: The first concerns how close together prime numbers can occur, however far along the number line you go. For more than a decade, the best known result established that infinitely many pairs of primes are at most 246 apart.
+                      - link "Julia Stadlmann⁠ (เปิดในหน้าต่างใหม่)" [ref=e1804] [cursor=pointer]:
+                        - /url: https://math.illinois.edu/directory/profile/stadl
+                        - generic [ref=e1805]: Julia Stadlmann
+                        - text: ⁠
+                        - generic [ref=e1806]: (เปิดในหน้าต่างใหม่)
+                      - text: "recently improved that bound to 240. Astra helped establish a stronger bound of 186, showing that infinitely many pairs occur within this smaller distance. Short prime gaps:"
+                      - link "Proof⁠ (เปิดในหน้าต่างใหม่)" [ref=e1807] [cursor=pointer]:
+                        - /url: https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf
+                        - text: Proof⁠
+                        - generic [ref=e1808]: (เปิดในหน้าต่างใหม่)
+                      - text: and
+                      - link "supporting research⁠ (เปิดในหน้าต่างใหม่)" [ref=e1809] [cursor=pointer]:
+                        - /url: https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps_abridged_cot.pdf
+                        - text: supporting research⁠
+                        - generic [ref=e1810]: (เปิดในหน้าต่างใหม่)
+                      - text: .
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 9" [ref=e1812] [cursor=pointer]:
+                        - /url: "#citation-top-9"
+                  - listitem [ref=e1815]:
+                    - generic [ref=e1816]: "10"
+                    - paragraph [ref=e1818]:
+                      - text: "The second concerns unusually large gaps between primes. Astra improved a term in a bound on these gaps that had remained unchanged for more than 80 years. We’re sharing the proofs and abridged chain of thought and verification materials for both results. Large prime gaps:"
+                      - link "Proof⁠ (เปิดในหน้าต่างใหม่)" [ref=e1819] [cursor=pointer]:
+                        - /url: https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/long_gaps.pdf
+                        - text: Proof⁠
+                        - generic [ref=e1820]: (เปิดในหน้าต่างใหม่)
+                      - text: and
+                      - link "supporting research⁠ (เปิดในหน้าต่างใหม่)" [ref=e1821] [cursor=pointer]:
+                        - /url: https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/long_gaps_abridged_cot.pdf
+                        - text: supporting research⁠
+                        - generic [ref=e1822]: (เปิดในหน้าต่างใหม่)
+                      - text: .
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 10" [ref=e1824] [cursor=pointer]:
+                        - /url: "#citation-top-10"
+                  - listitem [ref=e1827]:
+                    - generic [ref=e1828]: "11"
+                    - paragraph [ref=e1830]:
+                      - text: We independently evaluated all Claude models following the intended HealthBench Professional procedure, using GPT‑5.4 grading and length-adjusted, unclipped scores. For Fable 5.1, we used Opus 5 fallback for provider refusals.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 11" [ref=e1832] [cursor=pointer]:
+                        - /url: "#citation-top-11"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 11" [ref=e1836] [cursor=pointer]:
+                        - /url: "#citation-top-11:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 11" [ref=e1840] [cursor=pointer]:
+                        - /url: "#citation-top-11:3"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 4 ของเชิงอรรถ 11" [ref=e1844] [cursor=pointer]:
+                        - /url: "#citation-top-11:4"
+                  - listitem [ref=e1847]:
+                    - generic [ref=e1848]: "12"
+                    - paragraph [ref=e1850]:
+                      - text: Claude Fable 5 and 5.1 are not included in LifeSciBench Gold v1, GeneBench Pro v13, and MedChemBench because they refuse the majority of questions in these evaluations.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 12" [ref=e1852] [cursor=pointer]:
+                        - /url: "#citation-top-12"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 12" [ref=e1856] [cursor=pointer]:
+                        - /url: "#citation-top-12:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 12" [ref=e1860] [cursor=pointer]:
+                        - /url: "#citation-top-12:3"
+                  - listitem [ref=e1863]:
+                    - generic [ref=e1864]: "13"
+                    - paragraph [ref=e1866]:
+                      - text: On ExploitGym, we tested Astra and Sol without the 6-hour time limit, to better assess their full cyber capabilities. They are fast enough that it has little impact.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 13" [ref=e1868] [cursor=pointer]:
+                        - /url: "#citation-top-13"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 13" [ref=e1872] [cursor=pointer]:
+                        - /url: "#citation-top-13:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 13" [ref=e1876] [cursor=pointer]:
+                        - /url: "#citation-top-13:3"
+                  - listitem [ref=e1879]:
+                    - generic [ref=e1880]: "14"
+                    - paragraph [ref=e1882]:
+                      - text: "ExploitBench (June–August 2026) contains 20 high-severity V8 vulnerabilities across 13 stable Chrome releases. The benchmark tests whether agents can achieve arbitrary code execution in V8 and official Chrome releases for Linux by exploiting each specified vulnerability. Some included vulnerabilities may not permit arbitrary code execution under the evaluation’s constraints, so a 100% success rate may not be achievable. Note: the 5.5% score of GPT-5.6 Sol is an artifact of the 300-turn limit in the benchmark, which is not a limit that real customers using max would have. The model at similar settings achieved an 11.5% score when hitting fewer limits."
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 14" [ref=e1884] [cursor=pointer]:
+                        - /url: "#citation-top-14"
+                  - listitem [ref=e1887]:
+                    - generic [ref=e1888]: "15"
+                    - paragraph [ref=e1890]:
+                      - text: Jeremy Spence et al. “
+                      - 'link "The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark⁠ (เปิดในหน้าต่างใหม่)" [ref=e1891] [cursor=pointer]':
+                        - /url: https://arxiv.org/abs/2608.11469v1
+                        - text: "The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark⁠"
+                        - generic [ref=e1892]: (เปิดในหน้าต่างใหม่)
+                      - text: .” arXiv:2608.11469v1, 2026.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 15" [ref=e1894] [cursor=pointer]:
+                        - /url: "#citation-top-15"
+                  - listitem [ref=e1897]:
+                    - generic [ref=e1898]: "16"
+                    - paragraph [ref=e1900]:
+                      - generic [ref=e1901]: When we test across third-party models, we use a simpler research setup. Codex has a more complex production configuration, which can result in different raw-model error rates. Provider-side safeguards and computer-tool implementations still differ. Users do not experience the no-confirmation scenario in Codex, as it's an internal research configuration.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 16" [ref=e1903] [cursor=pointer]:
+                        - /url: "#citation-top-16"
+                  - listitem [ref=e1906]:
+                    - generic [ref=e1907]: "17"
+                    - paragraph [ref=e1909]:
+                      - text: For ScreenSpot-Pro and ExploitGym, the Fable scores we report come from Mythos, which is Fable with fewer safeguards.
+                      - link "เลื่อนไปที่แหล่งอ้างอิง 17" [ref=e1911] [cursor=pointer]:
+                        - /url: "#citation-top-17"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 2 ของเชิงอรรถ 17" [ref=e1915] [cursor=pointer]:
+                        - /url: "#citation-top-17:2"
+                      - link "เลื่อนไปที่ข้อมูลอ้างอิง 3 ของเชิงอรรถ 17" [ref=e1919] [cursor=pointer]:
+                        - /url: "#citation-top-17:3"
+      - contentinfo [ref=e1922]:
+        - generic [ref=e1924]:
+          - generic [ref=e1925]:
+            - generic [ref=e1926]:
+              - heading "งานวิจัย" [level=2] [ref=e1927]
+              - list [ref=e1928]:
+                - listitem [ref=e1929]:
+                  - link "ดัชนีการวิจัย" [ref=e1930] [cursor=pointer]:
+                    - /url: /th-TH/research/index/
+                - listitem [ref=e1931]:
+                  - link "ภาพรวมงานวิจัย" [ref=e1932] [cursor=pointer]:
+                    - /url: /th-TH/research/
+                - listitem [ref=e1933]:
+                  - link "การวิจัยทางเศรษฐกิจ" [ref=e1934] [cursor=pointer]:
+                    - /url: /th-TH/signals/
+            - generic [ref=e1935]:
+              - heading "ความก้าวหน้าล่าสุด" [level=2] [ref=e1936]
+              - list [ref=e1937]:
+                - listitem [ref=e1938]:
+                  - link "GPT-6" [ref=e1939] [cursor=pointer]:
+                    - /url: /th-TH/index/gpt-6-astra/
+                - listitem [ref=e1940]:
+                  - link "GPT-5.6" [ref=e1941] [cursor=pointer]:
+                    - /url: /th-TH/index/gpt-5-6/
+                - listitem [ref=e1942]:
+                  - link "GPT-5.5" [ref=e1943] [cursor=pointer]:
+                    - /url: /th-TH/index/introducing-gpt-5-5/
+                - listitem [ref=e1944]:
+                  - link "GPT-5.4" [ref=e1945] [cursor=pointer]:
+                    - /url: /th-TH/index/introducing-gpt-5-4/
+            - generic [ref=e1946]:
+              - heading "ความปลอดภัย" [level=2] [ref=e1947]
+              - list [ref=e1948]:
+                - listitem [ref=e1949]:
+                  - link "แนวทางด้านความปลอดภัย" [ref=e1950] [cursor=pointer]:
+                    - /url: /th-TH/safety/
+                - listitem [ref=e1951]:
+                  - link "ความปลอดภัยในการนำไปใช้งานจริง (เปิดในหน้าต่างใหม่)" [ref=e1952] [cursor=pointer]:
+                    - /url: https://deploymentsafety.openai.com/
+                    - text: ความปลอดภัยในการนำไปใช้งานจริง
+                    - generic [ref=e1955]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1956]:
+                  - link "ความปลอดภัยและความเป็นส่วนตัว" [ref=e1957] [cursor=pointer]:
+                    - /url: /th-TH/security-and-privacy/
+                - listitem [ref=e1958]:
+                  - link "ความไว้วางใจและความโปร่งใส" [ref=e1959] [cursor=pointer]:
+                    - /url: /trust-and-transparency/
+          - generic [ref=e1960]:
+            - generic [ref=e1961]:
+              - heading "ผลิตภัณฑ์" [level=2] [ref=e1962]
+              - list [ref=e1963]:
+                - listitem [ref=e1964]:
+                  - link "ChatGPT (เปิดในหน้าต่างใหม่)" [ref=e1965] [cursor=pointer]:
+                    - /url: https://chatgpt.com/?openaicom-did=08c57908-9276-4e3a-9c1c-158dc3ec3111&openaicom_referred=true
+                    - text: ChatGPT
+                    - generic [ref=e1968]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1969]:
+                  - link "ChatGPT Business (เปิดในหน้าต่างใหม่)" [ref=e1970] [cursor=pointer]:
+                    - /url: https://chatgpt.com/business/?openaicom-did=08c57908-9276-4e3a-9c1c-158dc3ec3111&openaicom_referred=true
+                    - text: ChatGPT Business
+                    - generic [ref=e1973]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1974]:
+                  - link "ChatGPT Enterprise (เปิดในหน้าต่างใหม่)" [ref=e1975] [cursor=pointer]:
+                    - /url: https://chatgpt.com/th-TH/business/enterprise/?openaicom-did=08c57908-9276-4e3a-9c1c-158dc3ec3111&openaicom_referred=true
+                    - text: ChatGPT Enterprise
+                    - generic [ref=e1978]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1979]:
+                  - link "ChatGPT สำหรับการศึกษา (เปิดในหน้าต่างใหม่)" [ref=e1980] [cursor=pointer]:
+                    - /url: https://chatgpt.com/th-TH/business/education/?openaicom-did=08c57908-9276-4e3a-9c1c-158dc3ec3111&openaicom_referred=true
+                    - text: ChatGPT สำหรับการศึกษา
+                    - generic [ref=e1983]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1984]:
+                  - link "Codex" [ref=e1985] [cursor=pointer]:
+                    - /url: /th-TH/codex/
+                - listitem [ref=e1986]:
+                  - link "บันทึกการอัปเดต" [ref=e1987] [cursor=pointer]:
+                    - /url: /th-TH/products/release-notes/
+            - generic [ref=e1988]:
+              - heading "แพลตฟอร์ม API" [level=2] [ref=e1989]
+              - list [ref=e1990]:
+                - listitem [ref=e1991]:
+                  - link "ภาพรวม" [ref=e1992] [cursor=pointer]:
+                    - /url: /th-TH/api/
+                - listitem [ref=e1993]:
+                  - link "เข้าสู่ระบบ API (เปิดในหน้าต่างใหม่)" [ref=e1994] [cursor=pointer]:
+                    - /url: https://platform.openai.com/login
+                    - text: เข้าสู่ระบบ API
+                    - generic [ref=e1997]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e1998]:
+                  - link "เอกสาร (เปิดในหน้าต่างใหม่)" [ref=e1999] [cursor=pointer]:
+                    - /url: https://developers.openai.com/api/docs
+                    - text: เอกสาร
+                    - generic [ref=e2002]: (เปิดในหน้าต่างใหม่)
+          - generic [ref=e2003]:
+            - generic [ref=e2004]:
+              - heading "ธุรกิจ" [level=2] [ref=e2005]
+              - list [ref=e2006]:
+                - listitem [ref=e2007]:
+                  - link "ภาพรวม" [ref=e2008] [cursor=pointer]:
+                    - /url: /th-TH/business/
+                - listitem [ref=e2009]:
+                  - link "โซลูชัน" [ref=e2010] [cursor=pointer]:
+                    - /url: /th-TH/solutions/
+                - listitem [ref=e2011]:
+                  - link "แหล่งข้อมูล" [ref=e2012] [cursor=pointer]:
+                    - /url: /th-TH/business/learn/
+                - listitem [ref=e2013]:
+                  - link "เรื่องราวความสำเร็จ" [ref=e2014] [cursor=pointer]:
+                    - /url: /th-TH/business/customer-stories/
+                - listitem [ref=e2015]:
+                  - link "Partner Network" [ref=e2016] [cursor=pointer]:
+                    - /url: /th-TH/business/partners/
+                - listitem [ref=e2017]:
+                  - link "ติดต่อฝ่ายขาย" [ref=e2018] [cursor=pointer]:
+                    - /url: /th-TH/contact-sales/
+            - generic [ref=e2019]:
+              - heading "นักพัฒนา" [level=2] [ref=e2020]
+              - list [ref=e2021]:
+                - listitem [ref=e2022]:
+                  - link "Apps SDK (เปิดในหน้าต่างใหม่)" [ref=e2023] [cursor=pointer]:
+                    - /url: https://developers.openai.com/apps-sdk
+                    - text: Apps SDK
+                    - generic [ref=e2026]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e2027]:
+                  - link "Open Models" [ref=e2028] [cursor=pointer]:
+                    - /url: /th-TH/open-models/
+                - listitem [ref=e2029]:
+                  - link "เอกสาร (เปิดในหน้าต่างใหม่)" [ref=e2030] [cursor=pointer]:
+                    - /url: https://developers.openai.com/
+                    - text: เอกสาร
+                    - generic [ref=e2033]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e2034]:
+                  - link "แหล่งข้อมูล (เปิดในหน้าต่างใหม่)" [ref=e2035] [cursor=pointer]:
+                    - /url: https://developers.openai.com/learn
+                    - text: แหล่งข้อมูล
+                    - generic [ref=e2038]: (เปิดในหน้าต่างใหม่)
+                - listitem [ref=e2039]:
+                  - link "ฟอรัมนักพัฒนา (เปิดในหน้าต่างใหม่)" [ref=e2040] [cursor=pointer]:
+                    - /url: https://community.openai.com/
+                    - text: ฟอรัมนักพัฒนา
+                    - generic [ref=e2043]: (เปิดในหน้าต่างใหม่)
+          - generic [ref=e2044]:
+            - generic [ref=e2045]:
+              - heading "บริษัท" [level=2] [ref=e2046]
+              - list [ref=e2047]:
+                - listitem [ref=e2048]:
+                  - link "เกี่ยวกับเรา" [ref=e2049] [cursor=pointer]:
+                    - /url: /th-TH/about/
+                - listitem [ref=e2050]:
+                  - link "บทบัญญัติของเรา" [ref=e2051] [cursor=pointer]:
+                    - /url: /charter/
+                - listitem [ref=e2052]:
+                  - link "ร่วมงานกับเรา" [ref=e2053] [cursor=pointer]:
+                    - /url: /careers/
+                - listitem [ref=e2054]:
+                  - link "ข่าว" [ref=e2055] [cursor=pointer]:
+                    - /url: /th-TH/news/
+            - generic [ref=e2056]:
+              - heading "การสนับสนุน" [level=2] [ref=e2057]
+              - list [ref=e2058]:
+                - listitem [ref=e2059]:
+                  - link "ศูนย์ช่วยเหลือ (เปิดในหน้าต่างใหม่)" [ref=e2060] [cursor=pointer]:
+                    - /url: https://help.openai.com/
+                    - text: ศูนย์ช่วยเหลือ
+                    - generic [ref=e2063]: (เปิดในหน้าต่างใหม่)
+          - generic [ref=e2064]:
+            - generic [ref=e2065]:
+              - heading "เพิ่มเติม" [level=2] [ref=e2066]
+              - list [ref=e2067]:
+                - listitem [ref=e2068]:
+                  - link "สตอรี่" [ref=e2069] [cursor=pointer]:
+                    - /url: /th-TH/stories/
+                - listitem [ref=e2070]:
+                  - link "Academy" [ref=e2071] [cursor=pointer]:
+                    - /url: /academy/
+                - listitem [ref=e2072]:
+                  - link "Supply Co." [ref=e2073] [cursor=pointer]:
+                    - /url: /th-TH/supply/
+                - listitem [ref=e2074]:
+                  - link "ไลฟ์สตรีม" [ref=e2075] [cursor=pointer]:
+                    - /url: /th-TH/live/
+                - listitem [ref=e2076]:
+                  - link "พอดแคสต์" [ref=e2077] [cursor=pointer]:
+                    - /url: /th-TH/podcast/
+                - listitem [ref=e2078]:
+                  - link "RSS" [ref=e2079] [cursor=pointer]:
+                    - /url: /th-TH/news/rss.xml
+            - generic [ref=e2080]:
+              - heading "ข้อกำหนดและนโยบาย" [level=2] [ref=e2081]
+              - list [ref=e2082]:
+                - listitem [ref=e2083]:
+                  - link "เงื่อนไขการใช้งาน" [ref=e2084] [cursor=pointer]:
+                    - /url: /th-TH/policies/terms-of-use/
+                - listitem [ref=e2085]:
+                  - link "นโยบายความเป็นส่วนตัว" [ref=e2086] [cursor=pointer]:
+                    - /url: /th-TH/policies/privacy-policy/
+                - listitem [ref=e2087]:
+                  - link "นโยบายอื่น" [ref=e2088] [cursor=pointer]:
+                    - /url: /th-TH/policies/
+        - generic [ref=e2089]:
+          - generic [ref=e2090]:
+            - link "X" [ref=e2091] [cursor=pointer]:
+              - /url: https://x.com/OpenAI
+              - generic [ref=e2094]: (เปิดในหน้าต่างใหม่)
+            - link "YouTube" [ref=e2095] [cursor=pointer]:
+              - /url: https://www.youtube.com/OpenAI
+              - generic [ref=e2098]: (เปิดในหน้าต่างใหม่)
+            - link "LinkedIn" [ref=e2099] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/openai
+              - generic [ref=e2102]: (เปิดในหน้าต่างใหม่)
+            - link "GitHub" [ref=e2103] [cursor=pointer]:
+              - /url: https://github.com/openai
+              - generic [ref=e2106]: (เปิดในหน้าต่างใหม่)
+            - link "Instagram" [ref=e2107] [cursor=pointer]:
+              - /url: https://www.instagram.com/openai/
+              - generic [ref=e2110]: (เปิดในหน้าต่างใหม่)
+            - link "TikTok" [ref=e2111] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@openai
+              - generic [ref=e2114]: (เปิดในหน้าต่างใหม่)
+            - link "Discord" [ref=e2115] [cursor=pointer]:
+              - /url: https://discord.gg/openai
+              - generic [ref=e2118]: (เปิดในหน้าต่างใหม่)
+          - generic [ref=e2119]:
+            - generic [ref=e2120]: OpenAI © 2015–2026
+            - button "จัดการคุกกี้" [ref=e2121] [cursor=pointer]
+          - generic [ref=e2122]:
+            - button "เปลี่ยนภาษา" [ref=e2123] [cursor=pointer]:
+              - generic [ref=e2124]: ไทย
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - textbox "ค้นหาภูมิภาคตามชื่อหรือพื้นที่":
+                        - /placeholder: ค้นหา
+  - dialog [ref=e2129]:
+    - generic [ref=e2130]:
+      - paragraph [ref=e2131]: เราใช้คุกกี้
+      - paragraph [ref=e2132]:
+        - text: เราใช้คุกกี้เพื่อช่วยให้เว็บไซต์นี้ทำงาน เข้าใจการใช้งานบริการ และสนับสนุนการตลาด ไปที่
+        - button "จัดการคุกกี้" [ref=e2133] [cursor=pointer]
+        - text: เพื่อเปลี่ยนการตั้งค่าได้ทุกเมื่อ ดู
+        - link "นโยบายคุกกี้" [ref=e2134] [cursor=pointer]:
+          - /url: /policies/cookie-policy/
+        - text: ของเราสำหรับข้อมูลเพิ่มเติม
+    - generic [ref=e2135]:
+      - button "จัดการคุกกี้" [ref=e2136] [cursor=pointer]
+      - button "ปฏิเสธสิ่งที่ไม่จำเป็น" [ref=e2137] [cursor=pointer]
+      - button "ยอมรับทั้งหมด" [ref=e2138] [cursor=pointer]
+  - alert [ref=e2139]

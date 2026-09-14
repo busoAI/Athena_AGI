@@ -112,6 +112,16 @@ class AntigravitySupervisor:
         self.core = core
         self.client = genai.Client(api_key=Config.GEMINI_API_KEY)
         self.agy_path = r"C:\Users\BUSOLOVE\AppData\Local\agy\bin\agy.exe"
+        self._history: list[types.Content] = []
+
+    def clear_history(self) -> None:
+        """ล้างประวัติการสนทนาต่อเนื่องทั้งหมด"""
+        self._history.clear()
+        logger.info("[Supervisor] ล้างประวัติการสนทนาเรียบร้อยแล้วค่ะ")
+
+    def get_history(self) -> list[types.Content]:
+        """ดึงประวัติการสนทนาต่อเนื่องปัจจุบัน"""
+        return list(self._history)
 
     def _ensure_core(self) -> Any | None:
         """เชื่อมต่อ AthenaCore อัตโนมัติหากยังไม่ได้แนบมา เพื่อให้เข้าถึงเครื่องมือได้ครบถ้วน"""
@@ -194,6 +204,17 @@ class AntigravitySupervisor:
             except Exception as exc:
                 logger.warning("[Supervisor] ไม่สามารถดึงความจำบอส: %s", exc)
 
+        # ดึงสรุปหน้าต่างปัจจุบันบนหน้าจอแบบกระชับ (Grounding ทันที ประหยัด Token และไม่ต้องเรียก list_windows ก่อน)
+        if self.core and hasattr(self.core, "win_controller") and self.core.win_controller:
+            try:
+                wins = self.core.win_controller.list_windows()
+                if wins:
+                    top_titles = [w["title"] for w in wins[:4] if w.get("title")]
+                    if top_titles:
+                        instruction += f"\n\n[หน้าต่างที่เปิดอยู่บนจอขณะนี้]: {', '.join(top_titles)}"
+            except Exception:
+                pass
+
         last_error = None
 
         for model_name in candidate_models:
@@ -209,6 +230,7 @@ class AntigravitySupervisor:
                 chat = self.client.chats.create(
                     model=model_name,
                     config=types.GenerateContentConfig(**chat_config_kwargs),
+                    history=self._history[-20:] if self._history else None,
                 )
 
                 response = chat.send_message(command)
@@ -230,11 +252,16 @@ class AntigravitySupervisor:
                         else:
                             res = f"ไม่สามารถรัน {tool_name} ได้เนื่องจากไม่มี core ค่ะ"
 
-                        logger.info("[Supervisor Step Result]: %s", res)
+                        # ตัดทอนผลลัพธ์ของ Tool หากยาวเกิน 2,500 ตัวอักษร เพื่อประหยัด Token และป้องกัน Context บวม
+                        res_str = str(res)
+                        if len(res_str) > 2500:
+                            res_str = res_str[:2500] + "\n... (ข้อความยาวเกินไป เอเธน่าตัดทอนเพื่อประหยัดโควตาค่ะ)"
+
+                        logger.info("[Supervisor Step Result]: %s", res_str[:200])
                         function_responses.append(
                             types.Part.from_function_response(
                                 name=tool_name,
-                                response={"result": res},
+                                response={"result": res_str},
                             )
                         )
 
@@ -243,6 +270,13 @@ class AntigravitySupervisor:
                 final_text = response.text.strip() if response.text else "เอเธน่าดำเนินการตรวจสอบและจัดการให้เรียบร้อยแล้วค่ะ"
                 formatted_text = _format_athena_response(final_text)
                 logger.info("[Supervisor Final Report]: %s", formatted_text)
+
+                # บันทึกประวัติการสนทนาแบบ Multi-turn เพื่อรักษา Context ข้ามรอบ
+                self._history.append(types.Content(role="user", parts=[types.Part.from_text(text=command)]))
+                self._history.append(types.Content(role="model", parts=[types.Part.from_text(text=formatted_text)]))
+                if len(self._history) > 40:
+                    self._history = self._history[-40:]
+
                 return formatted_text
 
             except Exception as exc:
@@ -259,7 +293,17 @@ class AntigravitySupervisor:
                     # หากเกิดความผิดพลาดอื่น ลองโมเดลถัดไป
                     continue
 
-        return f"เกิดข้อผิดพลาดในการประมวลผลคำสั่ง: {last_error}"
+        err_detail = str(last_error or "")
+        if "401" in err_detail or "unauthenticated" in err_detail.lower():
+            friendly_err = "เอเธน่าไม่สามารถเชื่อมต่อระบบปัญญาประดิษฐ์ได้ เนื่องจากปัญหาการยืนยันตัวตน API Key ค่ะ กรุณาตรวจสอบการตั้งค่าคีย์ค่ะ"
+        elif "429" in err_detail or "resource_exhausted" in err_detail.lower():
+            friendly_err = "ขณะนี้ระบบมีปริมาณการเรียกใช้งานหนาแน่นชั่วคราว เอเธน่ากำลังรอสลับช่องทางประมวลผลค่ะ"
+        elif "network" in err_detail.lower() or "connection" in err_detail.lower():
+            friendly_err = "เกิดข้อผิดพลาดในการเชื่อมต่อเครือข่ายอินเทอร์เน็ตค่ะ กรุณาตรวจสอบการเชื่อมต่อค่ะ"
+        else:
+            friendly_err = "เอเธน่าพบข้อขัดข้องในการประมวลผลคำสั่งค่ะ กรุณาลองสั่งใหม่อีกครั้งค่ะ"
+
+        return _format_athena_response(friendly_err)
 
     async def aexecute_task(self, prompt: str) -> str:
         """รันคำสั่งเชิงลึกแบบ Asynchronous ใน Worker Thread เพื่อไม่บล็อก Live Loop"""

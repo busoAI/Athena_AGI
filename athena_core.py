@@ -292,7 +292,7 @@ class AthenaCore:
         if is_danger and not confirmed:
             return (
                 f"[Consequential Action Gate]: คำสั่งนี้มีความเสี่ยงสูงต่อระบบ (ตรวจพบ: {reason}) "
-                f"เอเธน่าขออนุญาตถามเพื่อความปลอดภัย บอสยืนยันให้ลงมือทำจริงไหมคะ?"
+                f"เพื่อความปลอดภัย กรุณายืนยันคำสั่งโดยระบุ confirmed=True ก่อนที่เอเธน่าจะดำเนินการค่ะ"
             )
 
         print(f"[Athena Core] สั่งงาน Antigravity CLI: {prompt}")
@@ -311,6 +311,8 @@ class AthenaCore:
             if result.returncode != 0 and not out:
                 err = result.stderr.strip()
                 return f"Antigravity CLI ทำงานขัดข้อง (code {result.returncode}): {err}"
+            if len(out) > 2500:
+                out = out[:2500] + "\n... [ผลลัพธ์ถูกตัดทอนเพื่อประหยัด Token ค่ะ]"
             return out or "Antigravity CLI ดำเนินการเรียบร้อยแล้วค่ะ"
         except subprocess.TimeoutExpired:
             return "Antigravity CLI ใช้เวลาประมวลผลนานเกินกำหนดค่ะ (Timeout)"
@@ -341,6 +343,8 @@ class AthenaCore:
             if result.returncode != 0 and not out:
                 err = result.stderr.strip()
                 return f"Microsoft UFO ทำงานขัดข้อง (code {result.returncode}): {err}"
+            if len(out) > 2500:
+                out = out[:2500] + "\n... [ผลลัพธ์ถูกตัดทอนเพื่อประหยัด Token ค่ะ]"
             return out or f"Microsoft UFO ดำเนินการงาน '{task}' สำเร็จค่ะ"
         except subprocess.TimeoutExpired:
             return "Microsoft UFO ใช้เวลาทำงานนานเกินกำหนดค่ะ (Timeout)"
